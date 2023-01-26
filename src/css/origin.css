@@ -1,0 +1,27 @@
+@tailwind base;
+/* se especifica si queremos que halla algun estilo base para el html, como seria la tipografia por ejemplo. Dependerá del tipo de proyecto y criterio del desarrollador */
+
+body {
+  font-family: 'inter', ui-sans-serif, system-ui, sans-serif;
+}
+/* se debe poner tal cual expecifica google fonts o la web de donde desargarte la fuente  */
+h1 {
+  font-family: 'Secular One', ui-sans-serif, system-ui, sans-serif;
+}
+
+@tailwind components;
+/* Se agrupan varias utilidades en un clase para poder comprimir código creando asi componentes */
+
+.flexContainerRow{
+  @apply flex flex-wrap p-4
+}
+.flexContainCol{
+@apply flex flex-wrap flex-col p-4
+}
+
+@tailwind utilities;
+/* se crean utilidades especificas para situaciones especificas valga la redundancia */
+
+.bordered {
+  border: 1px solid rgb(102, 236, 82);
+}
