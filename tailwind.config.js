@@ -2,7 +2,7 @@ const plugin = require('tailwindcss/plugin')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/*.html"],
+  content: ["./public/*.{html,js}","./src/js/*.{js}"],
   theme: {
     extend: {
       //aqui se extienden o agregaran las propiedades, se especifica la propiedad en este caso font = fontfamily, luego ponemos un nombre y su valor.
@@ -11,7 +11,18 @@ module.exports = {
       },
       fontFamily:{
         'secularOne':'"Secular One", ui-sans-serif, system-ui, sans-serif'
-      }
+      },
+
+      backgroundImage:{
+        'banner': "url('/src/aseets/banner.webp')",
+      },
+      backgroundPosition:{
+        'center': 'center',
+        'top': 'top',
+        'bottom': 'bottom',
+        'right': 'rigth',
+        'left': 'left',
+      },
     },
   },
 
