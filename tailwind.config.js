@@ -14,7 +14,7 @@ module.exports = {
       },
 
       backgroundImage:{
-        'banner': "url('/src/aseets/banner.webp')",
+        'banner': "url('/src/aseets/banner/banner.png')",
       },
       backgroundPosition:{
         'center': 'center',
