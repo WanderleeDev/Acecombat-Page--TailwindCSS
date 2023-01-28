@@ -14,7 +14,7 @@ module.exports = {
       },
 
       backgroundImage:{
-        'banner': "url('/src/aseets/banner/banner.png')",
+        'banner': "url('https://www.dropbox.com/s/vn1j7cxn5bti8ps/banner.png?raw=1')",
       },
       backgroundPosition:{
         'center': 'center',
