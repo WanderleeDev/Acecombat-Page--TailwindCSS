@@ -16,8 +16,8 @@
     <nav>
       <ul>
         <!-- btn dark mode -->
-        <li id="darkButtonContainer" class= "absolute right-2 top-4 containerBtnDark">
-          <button aria-label="Activar o desactivar Dark Mode" id="btnDarkMode" class="darkModeBtn">
+        <li id="darkButtonContainer" class= "z-10 absolute right-2 top-4 containerBtnDark">
+          <button id="btnDarkMode" class="darkModeBtn">
             <svg class="h-8 w-full text-yellow-400"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="4" />  <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7" />
             </svg>
             <svg class="h-8 w-full text-yellow-400 rotate-90"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -74,8 +74,8 @@
         <h1 class="font-secularOne hidden">Acecombat 2</h1>
       </header>
       <div class="bg-banner h-96 bg-cover bg-center overflow-hidden">
-        <div class="animate-upDown hover:rotate-180">
-          <img class=" mx-auto animate-fly w-1/4 relative top-1/4" src="/src/aseets/navr.png" alt="aircraft">
+        <div class="animate-upDown">
+          <img class="animate-fly w-1/4 relative top-1/4 hue-rotate-180" src="/src/aseets/navr.png" alt="aircraft">
         </div>
       </div>
       <button class="btn redBtnStyle relative bottom-5 left-1/2 ">
@@ -84,7 +84,7 @@
     </section>
     <section>
       <header>
-        <h2>Ediciones</h2>
+        <h2 class="text-center text-red-300">Ediciones</h2>
       </header>
       <div class="flexContainerCol justify-center items-center">
         <figure class="w-44 h-44 relative bg-teal-100">
