@@ -2,7 +2,7 @@ const plugin = require('tailwindcss/plugin')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/*.{html,js}","./src/js/*.{js}"],
+  content: ["./public/*.{html,js}","./src/js/main.js"],
   theme: {
     extend: {
       //aqui se extienden o agregaran las propiedades, se especifica la propiedad en este caso font = fontfamily, luego ponemos un nombre y su valor.
@@ -22,6 +22,27 @@ module.exports = {
         'bottom': 'bottom',
         'right': 'rigth',
         'left': 'left',
+      },
+
+      //nuevos animaciones creadas
+      keyframes:{
+        fly:{
+          '0%':{width: '25%', opacity: '0'},
+          '50%':{opacity: '0.5', transform: 'translateY(8rem)'},
+          '100%':{width: '80%', opacity: '1', transform: 'translateY(8rem)'},
+        },
+        upDown:{
+          '0%':{transform: 'translateX(0rem)'},
+          '35%':{transform: 'translateX(-1rem)'},
+          '70%':{transform: 'translateX(1rem)'},          
+          '100%':{transform: 'translateX(0rem)'},          
+        },
+      },
+
+      //usando las aniamciones creadas las agragamos a animation
+      animation:{
+        upDown:'upDown 5s linear infinite 2s',
+        fly: 'fly 3s linear forwards',
       },
     },
   },
