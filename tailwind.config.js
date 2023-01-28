@@ -15,6 +15,7 @@ module.exports = {
 
       backgroundImage:{
         'banner': "url('https://www.dropbox.com/s/vn1j7cxn5bti8ps/banner.png?raw=1')",
+        'logo': "url('https://www.dropbox.com/s/2v4osqi9ee5jqeu/pngegg.png?raw=1')",
       },
       backgroundPosition:{
         'center': 'center',
@@ -38,12 +39,17 @@ module.exports = {
           '70%':{transform: 'translateX(1rem)'},          
           '100%':{transform: 'translateX(0rem)'},          
         },
+        rotateY:{
+          '0%':{transform: 'rotateY(0deg)'},
+          '100%':{transform: 'rotateY(360deg)'},
+        },
       },
 
       //usando las aniamciones creadas las agragamos a animation
       animation:{
         upDown:'upDown 5s linear infinite 2s',
         fly: 'fly 3s linear forwards',
+        rotateY: 'rotateY 3s linear infinite'
       },
     },
   },
