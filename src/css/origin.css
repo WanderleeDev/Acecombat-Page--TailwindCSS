@@ -34,10 +34,13 @@ img {
   @apply shadow-md drop-shadow-md -translate-x-2/4 font-semibold tracking-wider rounded-3xl py-2 px-10
 }
 .redBtnStyle{
-  @apply bg-red-300 text-white  hover:scale-105 hover:bg-white hover:text-red-300 duration-300
+  @apply bg-sky-400 text-white  hover:scale-105 hover:bg-white hover:text-sky-400 duration-300
 }
 .navbarIcon{
   @apply h-8 w-8 text-gray-300 hover:scale-125 duration-300 hover:text-orange-700
+}
+.aircraftFly{
+  @apply animate-fly animate-upDown
 }
 
 @tailwind utilities;

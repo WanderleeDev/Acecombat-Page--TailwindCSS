@@ -23,6 +23,28 @@ module.exports = {
         'right': 'rigth',
         'left': 'left',
       },
+
+      //nuevos animaciones creadas
+      keyframes:{
+        fly:{
+          '0%':{width: '25%', opacity: '0'},
+          '50%':{width: '35%', opacity: '0.5', transform: 'translateY(8rem)'},
+          '100%':{width: '70%', opacity: '1', transform: 'translateY(8rem)'},
+        },
+
+        upDown:{
+          '0%':{transform: 'translateX(0rem)'},
+          '35%':{transform: 'translateX(-1rem)'},
+          '70%':{transform: 'translateX(1rem)'},          
+          '100%':{transform: 'translateX(0rem)'},          
+        },
+      },
+
+      //usando las aniamciones creadas las agragamos a animation
+      animation:{
+        upDown:'upDown 5s linear infinite 2s',
+        fly: 'fly 3s linear forwards',
+      },
     },
   },
 
