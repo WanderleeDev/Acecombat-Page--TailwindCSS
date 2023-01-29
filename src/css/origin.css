@@ -5,7 +5,7 @@ body {
   font-family: 'inter', ui-sans-serif, system-ui, sans-serif;
 }
 /* se debe poner tal cual expecifica google fonts o la web de donde desargarte la fuente  */
-h1 {
+h1,h2,h3,h4,h5,h6 {
   font-family: 'Secular One', ui-sans-serif, system-ui, sans-serif;
 }
 img {
@@ -14,7 +14,9 @@ img {
 
 @tailwind components;
 /* Se agrupan varias utilidades en un clase para poder comprimir código creando asi componentes */
-
+.titleStyle2{
+  @apply text-red-300 text-2xl mx-4 border-b-2
+}
 .flexContainerRow{
   @apply flex flex-wrap p-4 
 }

@@ -84,8 +84,8 @@
     </section>
     <!-- galeria n°1 -->
     <section class="mt-16">
-      <header class="mx-4 border-b-2">
-        <h2 class="text-red-300 font-secularOne text-2xl">Ediciones</h2>
+      <header class="">
+        <h2 class="titleStyle2">Ediciones</h2>
       </header>
       <div class="flexContainerRow flex-nowrap justify-center items-center">
         <!-- card n°1 -->
@@ -100,7 +100,7 @@
         </figure>
 
         <!-- card n°2 -->
-        <figure class="flexContainerCol shadowMix justify-center items-center overflow-hidden p-0 m-4 ">
+        <figure class="hidden flexContainerCol shadowMix justify-center items-center overflow-hidden p-0 m-4 ">
           <img loading="lazy" class="hover:animate-rotateY duration-200" src="https://www.dropbox.com/s/rkfqndkkhdb07c3/disc-red.jpg?raw=1" alt="Portada acecombat 2">
           <div class="bg-slate-500 flexContainerRow items-center py-6 justify-evenly w-full">
             <figcaption class="text-sky-400 uppercase text-center text-lg">Version 1</figcaption>
@@ -110,7 +110,7 @@
           </div>
         </figure>
         <!-- card n°3 -->
-        <figure class="flexContainerCol shadowMix justify-center items-center overflow-hidden p-0 m-4 ">
+        <figure class="hidden flexContainerCol shadowMix justify-center items-center overflow-hidden p-0 m-4 ">
           <img loading="lazy" class="hover:animate-rotateY duration-200" src="https://www.dropbox.com/s/8cvgm8ipri5jqyw/disc-green.jpg?raw=1" alt="Portada acecombat 2">
           <div class="bg-slate-500 flexContainerRow items-center py-6 justify-evenly w-full">
             <figcaption class="text-sky-400 uppercase text-center text-lg">Version 1</figcaption>
@@ -121,7 +121,38 @@
         </figure>
       </div>
     </section>
-    
+    <!-- grid section -->
+    <section class="grid gap-4 col-auto lg:grid-cols-[150px_minmax(220px,4)_100px]">
+      <header class="lg:col-span-4">
+        <h2 class="titleStyle2">Info</h2>
+      </header>
+      <div class=" p-12 bg-yellow-600 lg:col-span-4">1</div>
+      <div class="lg:col-span-1 lg:row-span-2">
+        <div class="h-80">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/8ygfW349sP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="flexContainerRow gap-8 flex-nowrap lg:col-span-3">
+        <img class="w-28 hover:bg-gray-200 rounded-xl duration-300 p-4" src="https://www.dropbox.com/s/tjzsq8g9qtp547u/playstation.png?raw=1" alt="Logo de playstation">
+        <ul class="list-disc marker:text-red-500">
+          <li class=" relative text-sm leading-loose before:absolute before:left-0  before:w-0 before:top-0 before:bottom-0 before:bg-green-100 before:-z-10 hover:before:w-full before:duration-500">Desarrollador: Namco</li>
+          <li class="text-sm leading-loose">Género: Simulador de vuelo de combate</li>
+          <li class="text-sm leading-loose">Formato: CD-ROM</li>
+          <li class="text-sm leading-loose">
+            Lanzamientos:
+            <ul>
+              <li class="text-xs"><span class="text-sky-500">JP </span><time datetime="1997-05-30">30 de mayo de 1997</time>
+              </li>
+              <li class="text-xs"><span class="text-sky-500">NA </span><time datetime="1997-07-31">31 de julio de 1997</time>
+              </li>
+              <li class="text-xs"><span class="text-sky-500">EU </span><time datetime="1997-10">Octubre de 1997</time></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class=" p-12 bg-blue-900 lg:col-span-3">4</div>
+      <div class=" p-12 bg-green-400 lg:col-span-4">5</div>
+    </section>
     
   </main>
   <script src="/src/js/main.js"></script>
