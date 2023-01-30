@@ -34,7 +34,7 @@
           <input id="search" class="pl-4 placeholder:text-blue-200 placeholder:text-xl focus:outline-none" type="search" placeholder="Buscar">
         </li>
         <!-- Barra de navegación -->
-        <li>
+        <li class="hidden">
           <ul class="flexContainerRow z-1 bg-white fixed p-2 justify-evenly bottom-0 left-0 right-0 border-t-2">
             <li>
               <a aria-label="Ir al inicio de la pagina web" href="#">
@@ -125,7 +125,36 @@
       <header class="lg:col-span-4">
         <h2 class="titleStyle2">Info</h2>
       </header>
-      <div class=" p-12 bg-yellow-600 lg:col-span-4">1</div>
+      <article class="lg:col-span-4">
+        <header>
+          <h3 class="text-red-400">Ace Combat 2</h3>
+        </header>
+        <figure class="flexContainerRow  justify-evenly items-center gap-2 relative bg-black">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/rryzp6yocchep0s/badge-5.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/gpik2unsz9q6fk7/badge-6.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/0lzpoc0i7pvuzxc/badge.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/0lzpoc0i7pvuzxc/badge.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/7ub6p9x6h6ho385/badge-3.jpg?raw=1" alt="badge" loading="lazy">
+          <figcaption class="absolute btn bg-white -bottom-7">Bagdes</figcaption>
+        </figure>
+        <p class="my-12 text-center text-sm">
+          Ace Combat 2 (エースコンバット2 Ēsu Konbatto Tsu?) es un videojuego de simulador de vuelo de combate de 1997 desarrollado y publicado para PlayStation por Namco.
+        </p>
+        <figure class="flexContainerRow  justify-evenly items-center gap-2 relative bg-black">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/5kw06w5wf5br22k/medal-2.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/5j79ggk6q41z96n/medal-3.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/dwdzeeuxmcgmwzh/medal-4.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/2a1ng7cu2p1n36u/medal-5.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/urvsjgy6zd9geou/medal-6.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/e7eo8yf1zamv2vv/medal-7.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/to3ag16s3qx7q4a/medal-8.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/4ggzte5979d9drn/medal-9.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/w7yyvb85plylr7g/medal-11.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/f85lmaez0b9yc3c/medal.jpg?raw=1" alt="badge" loading="lazy">
+          <figcaption class="absolute btn bg-white -top-7">Medal</figcaption>
+        </figure>
+      </article>
+      
       <div class="lg:col-span-1 lg:row-span-2">
         <div class="h-80">
           <iframe class="w-full h-full" src="https://www.youtube.com/embed/8ygfW349sP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -172,11 +201,11 @@
         </div>
       </article>
 
-      <article class="bg-green-400 lg:col-span-4">
+      <article class="bg-green-400 lg:col-span-4 overflow-hidden">
         <header>
-          <h3></h3>
+          <h3>Aircraft</h3>
         </header>
-        <div id="slider" class="flexContainerRow w-2400 flex-nowrap">
+        <div id="slider" class="flexContainerRow w-2400 flex-nowrap overscroll-x-contain my-20">
           <!-- Img 1 -->
           <figure class="w-full h-auto">
             <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/0oe2nt05xwx6yue/aircraft-a-4.jpg?raw=1" alt="aircraft A-4">

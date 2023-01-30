@@ -16,6 +16,8 @@ module.exports = {
       backgroundImage:{
         'banner': "url('https://www.dropbox.com/s/vn1j7cxn5bti8ps/banner.png?raw=1')",
         'logo': "url('https://www.dropbox.com/s/2v4osqi9ee5jqeu/pngegg.png?raw=1')",
+        'logo2': "url('https://www.dropbox.com/s/llfty3xusf7s3q6/logo-black%20%281%29.png?raw=1')",
+        
       },
       backgroundPosition:{
         'center': 'center',
@@ -43,6 +45,10 @@ module.exports = {
 
       width:{
         '2400': '2400%',
+      },
+
+      borderRadius:{
+        '50%': '50%',
       },
 
       //nuevos animaciones creadas
