@@ -25,6 +25,26 @@ module.exports = {
         'left': 'left',
       },
 
+      zIndex:{
+        '1': '1',
+        '2': '2',
+        '3': '3',
+        '4': '4',
+        '5': '5',
+        '6': '6',
+        '7': '7',
+        '8': '8',
+        '9': '9',
+      },
+
+      flexBasis:{
+        '16rem': '16rem',
+      },
+
+      width:{
+        '2400': '2400%',
+      },
+
       //nuevos animaciones creadas
       keyframes:{
         fly:{
@@ -45,7 +65,7 @@ module.exports = {
         },
       },
 
-      //usando las aniamciones creadas las agragamos a animation
+      //usando las aniamciones creadas las agregamos a animation
       animation:{
         upDown:'upDown 5s linear infinite 2s',
         fly: 'fly 3s linear forwards',
@@ -54,7 +74,7 @@ module.exports = {
     },
   },
 
-  //En plugin crearemos conjuntos de estilos al igual que @apply aqui se puede ser mas complejo ya que permite usar todas las proiedades css
+  //En plugin crearemos conjuntos de estilos al igual que @apply aqui se puede ser mas complejo ya que permite usar todas las propiedades css
   plugins: [
     plugin(function({addComponents}){
       //addComponents es un objeto que tendra las propidades de un elemento o bloque, puedes separalos por varios objetos para tenerlo más organizado
@@ -96,5 +116,5 @@ module.exports = {
     })
   ],
 }
-//PD: no es buena práctica hacer componentes de esta forma para eso tenemos la directiva @tailwind components, aún asi s bueno tenerlo presente.
+//PD: no es buena práctica hacer componentes de esta forma para eso tenemos la directiva @tailwind components, aún asi es bueno tenerlo presente.
 //Se usa Plugins en general para extender las utilidades importando librerias.

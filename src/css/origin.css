@@ -33,7 +33,7 @@ img {
   @apply absolute top-16 left-2/4 -translate-x-1/2 z-10 bg-white w-11/12 rounded-full justify-center items-center cursor-pointer shadow-lg
 }
 .btn{
-  @apply -translate-x-2/4 font-semibold tracking-wider rounded-3xl py-2 px-10
+  @apply font-semibold tracking-wider rounded-3xl py-2 px-10
 }
 .shadowMix{
   @apply shadow-md drop-shadow-md
@@ -43,6 +43,9 @@ img {
 }
 .navbarIcon{
   @apply h-8 w-8 text-gray-300 hover:scale-110 duration-300 hover:text-orange-700
+}
+.miniContainer{
+  @apply w-24 text-center text-3xl font-bold py-2 px-4 rounded-3xl 
 }
 
 @tailwind utilities;

@@ -16,7 +16,7 @@
     <nav>
       <ul>
         <!-- btn dark mode -->
-        <li id="darkButtonContainer" class= "z-10 absolute right-2 top-4 containerBtnDark">
+        <li id="darkButtonContainer" class= "z-1 absolute right-2 top-4 containerBtnDark">
           <button id="btnDarkMode" class="darkModeBtn">
             <svg class="h-8 w-full text-yellow-400"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="4" />  <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7" />
             </svg>
@@ -35,7 +35,7 @@
         </li>
         <!-- Barra de navegación -->
         <li>
-          <ul class="flexContainerRow bg-white fixed p-2 justify-evenly bottom-0 left-0 right-0 border-t-2">
+          <ul class="flexContainerRow z-1 bg-white fixed p-2 justify-evenly bottom-0 left-0 right-0 border-t-2">
             <li>
               <a aria-label="Ir al inicio de la pagina web" href="#">
                 <svg class="navbarIcon"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -78,31 +78,30 @@
           <img loading="lazy" class="animate-fly w-1/4 relative top-1/4 hue-rotate-180" src="https://www.dropbox.com/s/znekszmxhf6iouq/nave.png?raw=1" alt="aircraft">
         </div>
       </div>
-      <button class="btn skyBtnStyle shadowMix relative bottom-5 left-1/2 ">
+      <button class="btn skyBtnStyle shadowMix relative bottom-5 left-1/2 -translate-x-2/4">
         Explore More
       </button>
     </section>
     <!-- galeria n°1 -->
     <section class="mt-16">
-      <header class="">
+      <header>
         <h2 class="titleStyle2">Ediciones</h2>
       </header>
       <div class="flexContainerRow flex-nowrap justify-center items-center">
         <!-- card n°1 -->
         <figure class=" flexContainerCol shadowMix justify-center items-center overflow-hidden p-0 m-4 bg-slate-200">
-          <img loading="lazy" class="hover:animate-rotateY duration-200" src="https://www.dropbox.com/s/kdzldxt3vit4vr2/disc-blueL%20.jpg?raw=1" alt="Portada acecombat 2">
-          <div class="bg-slate-500 flexContainerRow items-center py-6 justify-evenly w-full">
+          <img loading="lazy" class="hover:animate-rotateY duration-200" src="https://www.dropbox.com/s/8ceml9r6cov4i5z/disc-blueL%20.jpg?raw=1" alt="Portada acecombat 2">
+          <div class="bg-slate-500 flexContainerRow items-center justify-evenly w-full">
             <figcaption class="text-sky-400 uppercase text-center text-lg">Version 1</figcaption>
             <button aria-label="ver siguiente imagen">
               <svg class="animate-pulse text-white hover:text-slate-100"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="20" y1="12" x2="10" y2="12" />  <line x1="20" y1="12" x2="16" y2="16" />  <line x1="20" y1="12" x2="16" y2="8" />  <line x1="4" y1="4" x2="4" y2="20" /></svg>
             </button>
           </div>
         </figure>
-
         <!-- card n°2 -->
         <figure class="hidden flexContainerCol shadowMix justify-center items-center overflow-hidden p-0 m-4 ">
-          <img loading="lazy" class="hover:animate-rotateY duration-200" src="https://www.dropbox.com/s/rkfqndkkhdb07c3/disc-red.jpg?raw=1" alt="Portada acecombat 2">
-          <div class="bg-slate-500 flexContainerRow items-center py-6 justify-evenly w-full">
+          <img loading="lazy" class="hover:animate-rotateY duration-200" src="https://www.dropbox.com/s/k8pch56uofe1zmv/disc-red.jpg?raw=1" alt="Portada acecombat 2">
+          <div class="bg-slate-500 flexContainerRow items-center justify-evenly w-full">
             <figcaption class="text-sky-400 uppercase text-center text-lg">Version 1</figcaption>
             <button aria-label="ver siguiente imagen">
               <svg class="animate-pulse text-white hover:text-slate-100"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="20" y1="12" x2="10" y2="12" />  <line x1="20" y1="12" x2="16" y2="16" />  <line x1="20" y1="12" x2="16" y2="8" />  <line x1="4" y1="4" x2="4" y2="20" /></svg>
@@ -111,8 +110,8 @@
         </figure>
         <!-- card n°3 -->
         <figure class="hidden flexContainerCol shadowMix justify-center items-center overflow-hidden p-0 m-4 ">
-          <img loading="lazy" class="hover:animate-rotateY duration-200" src="https://www.dropbox.com/s/8cvgm8ipri5jqyw/disc-green.jpg?raw=1" alt="Portada acecombat 2">
-          <div class="bg-slate-500 flexContainerRow items-center py-6 justify-evenly w-full">
+          <img loading="lazy" class="hover:animate-rotateY duration-200" src="https://www.dropbox.com/s/ikwqhplo5knthag/disc-green.jpg?raw=1" alt="Portada acecombat 2">
+          <div class="bg-slate-500 flexContainerRow items-center justify-evenly w-full">
             <figcaption class="text-sky-400 uppercase text-center text-lg">Version 1</figcaption>
             <button aria-label="ver siguiente imagen">
               <svg class="animate-pulse text-white hover:text-slate-100"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="20" y1="12" x2="10" y2="12" />  <line x1="20" y1="12" x2="16" y2="16" />  <line x1="20" y1="12" x2="16" y2="8" />  <line x1="4" y1="4" x2="4" y2="20" /></svg>
@@ -135,7 +134,7 @@
       <div class="flexContainerRow gap-8 flex-nowrap lg:col-span-3">
         <img class="w-28 hover:bg-gray-200 rounded-xl duration-300 p-4" src="https://www.dropbox.com/s/tjzsq8g9qtp547u/playstation.png?raw=1" alt="Logo de playstation">
         <ul class="list-disc marker:text-red-500">
-          <li class=" relative text-sm leading-loose before:absolute before:left-0  before:w-0 before:top-0 before:bottom-0 before:bg-green-100 before:-z-10 hover:before:w-full before:duration-500">Desarrollador: Namco</li>
+          <li class=" relative text-sm leading-loose before:absolute before:left-0  before:w-0 before:top-0 before:bottom-0 before:bg-green-100 before:-z-1 hover:before:w-full before:duration-500">Desarrollador: Namco</li>
           <li class="text-sm leading-loose">Género: Simulador de vuelo de combate</li>
           <li class="text-sm leading-loose">Formato: CD-ROM</li>
           <li class="text-sm leading-loose">
@@ -150,8 +149,156 @@
           </li>
         </ul>
       </div>
-      <div class=" p-12 bg-blue-900 lg:col-span-3">4</div>
-      <div class=" p-12 bg-green-400 lg:col-span-4">5</div>
+
+      <article class="flexContainerRow justify-around gap-4 lg:col-span-3">
+        <header>
+          <h3 class="w-full">Valoraciones</h3>
+        </header>
+        <!-- card nº1 -->
+        <div class="flexContainerCol w-80 my-8 shadowMix bg-sky-100 rounded-2xl ">
+          <div class="flexContainerRow items-center gap-4">
+            <img class="w-12 h-12" loading="lazy" src="https://www.dropbox.com/s/s2hhctuqpok4v9e/Vandal_logo%20%281%29.png?raw=1" alt="Logo de Vandal">
+            <p class="text-3xl font-secularOne">Vandal</p>
+          </div>
+          <p class="self-end miniContainer bg-sky-300 text-slate-100">7.72</p>
+        </div>
+        <!-- card nº2 -->
+        <div class="flexContainerCol w-80 my-8 shadowMix bg-amber-100 rounded-2xl ">
+          <div class="flexContainerRow items-center gap-4">
+            <img class="w-12 h-12" loading="lazy" src="https://www.dropbox.com/s/3iqu8lt1ml2jkad/metacritic.png?raw=1" alt="Logo de Metacritic">
+            <p class="text-3xl font-secularOne">Metacritic</p>
+          </div>
+          <p class="self-end miniContainer bg-amber-300 text-slate-100">83</p>
+        </div>
+      </article>
+
+      <article class="bg-green-400 lg:col-span-4">
+        <header>
+          <h3></h3>
+        </header>
+        <div id="slider" class="flexContainerRow w-2400 flex-nowrap">
+          <!-- Img 1 -->
+          <figure class="w-full h-auto">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/0oe2nt05xwx6yue/aircraft-a-4.jpg?raw=1" alt="aircraft A-4">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 2 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/bsev68egvycr347/aircraft-a-6.jpg?raw=1" alt="aircraft A-6">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 3 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/m6vkaf7hba4vzyq/aircraft-a-10.jpg?raw=1" alt="aircraft A-10">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 4 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/q9ggjypedx0udmi/aircraft-ef-2000.jpg?raw=1" alt="aircraft aircraft-ef-2000">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 5 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/jf0xl9y8klwlay8/aircraft-f-4.jpg?raw=1" alt="aircraft F-4">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 6 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/dwk6ciieotya3w6/aircraft-f-14.jpg?raw=1" alt="aircraft F-14">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 7 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/9dtuqgrqrh0jnrl/aircraft-f-15s.jpg?raw=1" alt="aircraft F-15S">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 8 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/ndpkwabshulyklm/aircraft-f-16.jpg?raw=1" alt="aircraft F-16">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 9 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/3kcq8s3r6kbfas4/aircraft-f-22.jpg?raw=1" alt="aircraft F-22">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 10 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/bm416dxdd1ftjmi/aircraft-f-117q.jpg?raw=1" alt="aircraft F-117Q">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 11 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/hdv9i4bcx5otjp8/aircraft-fa-18e.jpg?raw=1" alt="aircraft FA-18e">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 12 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/obbwzynf3y0dp1q/aircraft-kf-c7.jpg?raw=1" alt="aircraft KF-C7">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 13 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/wb1k69dejsk8g6t/aircraft-mig-21.jpg?raw=1" alt="aircraft MIG-21">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 14 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/bh43o2a0byckzm8/aircraft-mig-29.jpg?raw=1" alt="aircraft MIG-29">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 15 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/5nvwrog67izenv0/aircraft-mig-31.jpg?raw=1" alt="aircraft MIG-31">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 16 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/3opthyhd2y3zyv3/aircraft-r-mo1.jpg?raw=1" alt="aircraft R-MO1">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 17 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/qea7oc9sz5jcbya/aircraft-sf-35.jpg?raw=1" alt="aircraft SF-35">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 18 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/m2uxdr1dvsnm8xi/aircraft-sf-39.jpg?raw=1" alt="aircraft SF-39">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 19 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/qrikjgp46nvip9i/aircraft-su-25.jpg?raw=1" alt="aircraft SU-25">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 20 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/1shko61r10xvm2a/aircraft-su-35.jpg?raw=1" alt="aircraft SU-35">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 21 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/cctbbgdsu934isu/aircraft-tnd-f3.jpg?raw=1" alt="aircraft TND-F3">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 22 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/viuzq274ez3u3lx/aircraft-x-29.jpg?raw=1" alt="aircraft X-29">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 23 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/ck3oxabjroru4dv/aircraft-xfa-27.jpg?raw=1" alt="aircraft XFA-27">
+            <figcaption></figcaption>
+          </figure>
+          <!-- Img 24 -->
+          <figure class="w-full overflow-hidden">
+            <img class="w-60" loading="lazy" src="https://www.dropbox.com/s/ltjvvvtoueehtsj/aircraft-yf-23a.jpg?raw=1" alt="aircraft YF-23A">
+            <figcaption></figcaption>
+          </figure>
+        </div>
+      </article>
     </section>
     
   </main>
