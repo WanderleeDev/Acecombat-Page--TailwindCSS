@@ -47,6 +47,18 @@ img {
 .miniContainer{
   @apply w-24 text-center text-3xl font-bold py-2 px-4 rounded-3xl 
 }
+.inputStyle{
+  @apply border-2 border-white rounded-sm bg-sky-200 p-2 hover:bg-sky-100 hover:border-sky-700
+}
+.labelStyleBasic{
+@apply text-xs text-gray-500 p-4
+}
+.borderRadiusDotted{
+  @apply border-2 border-dotted border-white rounded-50% w-28
+}
+.textStyleNamco{
+  @apply text-red-600 font-Orbitron font-bold text-4xl leading-loose tracking-wide
+}
 
 @tailwind utilities;
 /* se crean utilidades especificas para situaciones especificas valga la redundancia */

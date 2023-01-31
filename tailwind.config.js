@@ -12,7 +12,10 @@ module.exports = {
       fontFamily:{
         'secularOne':'"Secular One", ui-sans-serif, system-ui, sans-serif'
       },
-
+      fontFamily:{
+        'Orbitron': '"Orbitron", ui-sans-serif, system-ui, sans-serif'
+      },
+      
       backgroundImage:{
         'banner': "url('https://www.dropbox.com/s/vn1j7cxn5bti8ps/banner.png?raw=1')",
         'logo': "url('https://www.dropbox.com/s/2v4osqi9ee5jqeu/pngegg.png?raw=1')",
@@ -49,6 +52,10 @@ module.exports = {
 
       borderRadius:{
         '50%': '50%',
+      },
+
+      borderWidth:{
+        '1': '1px',
       },
 
       //nuevos animaciones creadas

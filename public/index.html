@@ -7,7 +7,7 @@
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Secular+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Orbitron:wght@600&family=Secular+One&display=swap" rel="stylesheet">
   <title>AceCombat</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -125,6 +125,7 @@
       <header class="lg:col-span-4">
         <h2 class="titleStyle2">Info</h2>
       </header>
+      <!-- Description -->
       <article class="lg:col-span-4">
         <header>
           <h3 class="text-red-400">Ace Combat 2</h3>
@@ -137,7 +138,7 @@
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/7ub6p9x6h6ho385/badge-3.jpg?raw=1" alt="badge" loading="lazy">
           <figcaption class="absolute btn bg-white -bottom-7">Bagdes</figcaption>
         </figure>
-        <p class="my-12 text-center text-sm">
+        <p class="my-12 text-center text-sm p-8">
           Ace Combat 2 (エースコンバット2 Ēsu Konbatto Tsu?) es un videojuego de simulador de vuelo de combate de 1997 desarrollado y publicado para PlayStation por Namco.
         </p>
         <figure class="flexContainerRow  justify-evenly items-center gap-2 relative bg-black">
@@ -154,12 +155,13 @@
           <figcaption class="absolute btn bg-white -top-7">Medal</figcaption>
         </figure>
       </article>
-      
+      <!-- Video -->
       <div class="lg:col-span-1 lg:row-span-2">
         <div class="h-80">
           <iframe class="w-full h-full" src="https://www.youtube.com/embed/8ygfW349sP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
+      <!-- Datos -->
       <div class="flexContainerRow gap-8 flex-nowrap lg:col-span-3">
         <img class="w-28 hover:bg-gray-200 rounded-xl duration-300 p-4" src="https://www.dropbox.com/s/tjzsq8g9qtp547u/playstation.png?raw=1" alt="Logo de playstation">
         <ul class="list-disc marker:text-red-500">
@@ -178,7 +180,7 @@
           </li>
         </ul>
       </div>
-
+      <!-- Valoraciones -->
       <article class="flexContainerRow justify-around gap-4 lg:col-span-3">
         <header>
           <h3 class="w-full">Valoraciones</h3>
@@ -200,8 +202,8 @@
           <p class="self-end miniContainer bg-amber-300 text-slate-100">83</p>
         </div>
       </article>
-
-      <article class="bg-green-400 lg:col-span-4 overflow-hidden">
+      <!-- Slaider -->
+      <article class="lg:col-span-4 overflow-hidden">
         <header>
           <h3>Aircraft</h3>
         </header>
@@ -329,7 +331,66 @@
         </div>
       </article>
     </section>
-    
   </main>
+  <footer class="bg-cyan-600">
+    <div>
+      <ul>
+        <li>
+          <img class="borderRadiusDotted" src="https://www.dropbox.com/s/8wbz6m7ewhgn9ak/meme_gato-mini.png?raw=1" alt="gato">
+          Autor : Wanderlee Max
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h4>Tools</h4>
+      <ul class="flexContainerRow p-0 gap-4 items-center">
+        <li>    
+          <img class="w-12" loading="lazy" src="https://www.dropbox.com/s/9h9ak21s57fr4zk/html.png?raw=1" alt="html">
+        </li>
+        <li>
+          <img class="w-12" loading="lazy" src="https://www.dropbox.com/s/fyz4t8d22wr0sez/js.png?raw=1" alt="Javascript">
+        </li>
+        <li>
+          <img class="w-12" loading="lazy" src="https://www.dropbox.com/s/1qlmhzeohsrjpbm/tailwind-css-icon.png?raw=1" alt="tailwindCss">
+        </li>
+      </ul>
+    </div>
+    <!-- form -->
+    <form class="flexContainerCol items-center bg-sky-500 gap-4 w-11/12 mx-auto my-16" action="/form" method="get">
+      <div class="flexContainerRow flex-nowrap items-center gap-4">
+        <img loading="lazy" class="w-1/4" src="https://www.dropbox.com/s/llfty3xusf7s3q6/logo-black%20%281%29.png?raw=1" alt="acecombat Logo">
+        <p class="uppercase font-secularOne font-semibold text-2xl">Acecombat</p>
+      </div>
+      <!-- question 1 -->
+      <div class="inputContainer relative">
+        <label class="absolute labelStyleBasic duration-200" for="name">Name</label>
+        <input class="inputStyle w-full" id="name" type="text" name="name">
+      </div>
+      <!-- question 2 -->
+      <div class="inputContainer relative">
+        <label class="absolute labelStyleBasic duration-200" for="email">E-mail</label>
+        <input class="inputStyle w-full" id="email" type="email" name="mail">
+      </div>
+      <!-- question 3 -->
+      <div class="inputContainer relative w-2/4">
+        <label class="absolute labelStyleBasic duration-200
+        " for="message">Comentary</label>
+        <textarea class="inputStyle resize-none bg-red-100 w-full" name="message" id="message"></textarea>
+      </div>
+      <!-- terms and Conditions -->
+      <div class="text-center text-white text-xs ">
+        <input class="accent-green-300 align-top" id="conditions" value="true" type="checkbox" name="tyc">
+        <label for="conditions">Aceptar <a href="#" class="animate-pulse text-green-300">términos y condiciones</a></label>
+      </div>
+      <button class="btn bg-sky-400 skyBtnStyle shadowMix rounded-sm" type="submit">Subscribe</button>
+    </form>
+    <div class="text-sm">
+      <p class="text-center">Presented By <span class="textStyleNamco">namco <sup class="align-sub">&reg;</sup></span></p>
+      <hr>
+      <p class="text-center p-4">Prácticando tailwindCSS &copy;</p>
+    </div>
+  </footer>
   <script src="/src/js/main.js"></script>
 </body>
