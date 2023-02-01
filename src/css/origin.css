@@ -17,6 +17,9 @@ img {
 .titleStyle2{
   @apply text-red-300 text-2xl mx-4 border-b-2
 }
+.titleStyle4{
+  @apply border-b-2 border-sky-300 border-dotted pt-4 my-4 text-sky-300 text-lg
+}
 .flexContainerRow{
   @apply flex flex-wrap p-4 
 }
@@ -58,6 +61,10 @@ img {
 }
 .textStyleNamco{
   @apply text-red-600 font-Orbitron font-bold text-4xl leading-loose tracking-wide
+}
+
+.beforeStyle{
+  @apply relative before:absolute before:left-0  before:w-0 before:top-0 before:bottom-0 before:bg-green-100 before:-z-1 hover:before:w-full before:duration-500
 }
 
 @tailwind utilities;

@@ -31,7 +31,7 @@
             <svg class="h-8 w-8 text-gray-300 hover:text-gray-400"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="10" cy="10" r="7" />  <line x1="21" y1="21" x2="15" y2="15" /></svg>
           </label>
           <!-- w-28 = 250px screen -->
-          <input id="search" class="pl-4 placeholder:text-blue-200 placeholder:text-xl focus:outline-none" type="search" placeholder="Buscar">
+          <input id="search" class="pl-0 placeholder:text-blue-200 placeholder:text-xl focus:outline-none max-xxs:w-28" type="search" placeholder="Buscar">
         </li>
         <!-- Barra de navegación -->
         <li class="hidden">
@@ -71,14 +71,14 @@
     <!-- banner -->
     <section>
       <header>
-        <h1 class="font-secularOne hidden">Acecombat 2</h1>
+        <h1 class="absolute top-2/4 text-5xl font-bold tracking-wider z-2 font-secularOne hidden sm:block">Acecombat 2</h1>
       </header>
-      <div class="bg-banner h-96 bg-cover bg-center overflow-hidden">
+      <div class="bg-banner h-96 bg-cover bg-center overflow-hidden sm:h-90vh">
         <div class="animate-upDown">
-          <img loading="lazy" class="animate-fly w-1/4 relative top-1/4 hue-rotate-180" src="https://www.dropbox.com/s/znekszmxhf6iouq/nave.png?raw=1" alt="aircraft">
+          <img loading="lazy" class="animate-fly w-1/4 relative hue-rotate-180 top-20 mx-auto sm:animate-fly2" src="https://www.dropbox.com/s/znekszmxhf6iouq/nave.png?raw=1" alt="aircraft">
         </div>
       </div>
-      <button class="btn skyBtnStyle shadowMix relative bottom-5 left-1/2 -translate-x-2/4">
+      <button class="btn skyBtnStyle shadowMix relative bottom-5 left-1/2 -translate-x-2/4 focus-within:bg-fuchsia-200">
         Explore More
       </button>
     </section>
@@ -121,55 +121,55 @@
       </div>
     </section>
     <!-- grid section -->
-    <section class="grid gap-4 col-auto lg:grid-cols-[150px_minmax(220px,4)_100px]">
-      <header class="lg:col-span-4">
+    <section class="grid gap-8 col-auto lg:grid-cols-[minmax(220px,4)_100px]">
+      <header class="lg:col-span-4 md:col-span-3">
         <h2 class="titleStyle2">Info</h2>
       </header>
       <!-- Description -->
-      <article class="lg:col-span-4">
+      <article class="lg:col-span-4 md:col-span-3">
         <header>
           <h3 class="text-red-400">Ace Combat 2</h3>
         </header>
         <figure class="flexContainerRow  justify-evenly items-center gap-2 relative bg-black">
-          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/rryzp6yocchep0s/badge-5.jpg?raw=1" alt="badge" loading="lazy">
-          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/gpik2unsz9q6fk7/badge-6.jpg?raw=1" alt="badge" loading="lazy">
-          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/0lzpoc0i7pvuzxc/badge.jpg?raw=1" alt="badge" loading="lazy">
-          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/0lzpoc0i7pvuzxc/badge.jpg?raw=1" alt="badge" loading="lazy">
-          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/7ub6p9x6h6ho385/badge-3.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-9" src="https://www.dropbox.com/s/rryzp6yocchep0s/badge-5.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-9" src="https://www.dropbox.com/s/gpik2unsz9q6fk7/badge-6.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-9" src="https://www.dropbox.com/s/0lzpoc0i7pvuzxc/badge.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-9" src="https://www.dropbox.com/s/0lzpoc0i7pvuzxc/badge.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-9" src="https://www.dropbox.com/s/7ub6p9x6h6ho385/badge-3.jpg?raw=1" alt="badge" loading="lazy">
           <figcaption class="absolute btn bg-white -bottom-7">Bagdes</figcaption>
         </figure>
         <p class="my-12 text-center text-sm p-8">
           Ace Combat 2 (エースコンバット2 Ēsu Konbatto Tsu?) es un videojuego de simulador de vuelo de combate de 1997 desarrollado y publicado para PlayStation por Namco.
         </p>
         <figure class="flexContainerRow  justify-evenly items-center gap-2 relative bg-black">
-          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/5kw06w5wf5br22k/medal-2.jpg?raw=1" alt="badge" loading="lazy">
-          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/5j79ggk6q41z96n/medal-3.jpg?raw=1" alt="badge" loading="lazy">
-          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/dwdzeeuxmcgmwzh/medal-4.jpg?raw=1" alt="badge" loading="lazy">
-          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/2a1ng7cu2p1n36u/medal-5.jpg?raw=1" alt="badge" loading="lazy">
-          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/urvsjgy6zd9geou/medal-6.jpg?raw=1" alt="badge" loading="lazy">
-          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/e7eo8yf1zamv2vv/medal-7.jpg?raw=1" alt="badge" loading="lazy">
-          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/to3ag16s3qx7q4a/medal-8.jpg?raw=1" alt="badge" loading="lazy">
-          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/4ggzte5979d9drn/medal-9.jpg?raw=1" alt="badge" loading="lazy">
-          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/w7yyvb85plylr7g/medal-11.jpg?raw=1" alt="badge" loading="lazy">
-          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300" src="https://www.dropbox.com/s/f85lmaez0b9yc3c/medal.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/5kw06w5wf5br22k/medal-2.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/5j79ggk6q41z96n/medal-3.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/dwdzeeuxmcgmwzh/medal-4.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/2a1ng7cu2p1n36u/medal-5.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/urvsjgy6zd9geou/medal-6.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/e7eo8yf1zamv2vv/medal-7.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/to3ag16s3qx7q4a/medal-8.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/4ggzte5979d9drn/medal-9.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/w7yyvb85plylr7g/medal-11.jpg?raw=1" alt="badge" loading="lazy">
+          <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/f85lmaez0b9yc3c/medal.jpg?raw=1" alt="badge" loading="lazy">
           <figcaption class="absolute btn bg-white -top-7">Medal</figcaption>
         </figure>
       </article>
       <!-- Video -->
-      <div class="lg:col-span-1 lg:row-span-2">
-        <div class="h-80">
+      <div class="lg:col-span-2 lg:row-span-2 lg:my-auto md:col-span-2 md:row-span-2 xl:px-20">
+        <div class="h-80 max-xxs:h-auto">
           <iframe class="w-full h-full" src="https://www.youtube.com/embed/8ygfW349sP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
       <!-- Datos -->
-      <div class="flexContainerRow gap-8 flex-nowrap lg:col-span-3">
-        <img class="w-28 hover:bg-gray-200 rounded-xl duration-300 p-4" src="https://www.dropbox.com/s/tjzsq8g9qtp547u/playstation.png?raw=1" alt="Logo de playstation">
-        <ul class="list-disc marker:text-red-500">
-          <li class=" relative text-sm leading-loose before:absolute before:left-0  before:w-0 before:top-0 before:bottom-0 before:bg-green-100 before:-z-1 hover:before:w-full before:duration-500">Desarrollador: Namco</li>
-          <li class="text-sm leading-loose">Género: Simulador de vuelo de combate</li>
-          <li class="text-sm leading-loose">Formato: CD-ROM</li>
-          <li class="text-sm leading-loose">
-            Lanzamientos:
+      <div class="flexContainerRow gap-8 flex-nowrap justify-center items-center lg:col-span-2 md:row-span-2 md:flex-wrap max-xxs:flex-wrap">
+        <img class="w-28 hover:bg-gray-200 rounded-xl duration-300 p-4 max-xxs:w-36" src="https://www.dropbox.com/s/tjzsq8g9qtp547u/playstation.png?raw=1" alt="Logo de playstation">
+        <ul class="list-disc marker:text-red-500 max-xxs:mx-6">
+          <li class="text-sm leading-loose beforeStyle">Desarrollador: Namco</li>
+          <li class="text-sm leading-loose beforeStyle">Género: Simulador de vuelo de combate</li>
+          <li class="text-sm leading-loose beforeStyle">Formato: CD-ROM</li>
+          <li class="text-sm leading-loose ">
+            <p class="beforeStyle">Lanzamientos:</p>
             <ul>
               <li class="text-xs"><span class="text-sky-500">JP </span><time datetime="1997-05-30">30 de mayo de 1997</time>
               </li>
@@ -181,29 +181,29 @@
         </ul>
       </div>
       <!-- Valoraciones -->
-      <article class="flexContainerRow justify-around gap-4 lg:col-span-3">
-        <header>
-          <h3 class="w-full">Valoraciones</h3>
+      <article class="flexContainerRow justify-around gap-4 lg:col-span-2 md:col-span-3">
+        <header class="w-full">
+          <h3>Valoraciones</h3>
         </header>
         <!-- card nº1 -->
-        <div class="flexContainerCol w-80 my-8 shadowMix bg-sky-100 rounded-2xl ">
+        <div class="flexContainerCol w-80 my-8 shadowMix bg-sky-100 rounded-2xl max-xxs:w-full max-xxs:p-2">
           <div class="flexContainerRow items-center gap-4">
             <img class="w-12 h-12" loading="lazy" src="https://www.dropbox.com/s/s2hhctuqpok4v9e/Vandal_logo%20%281%29.png?raw=1" alt="Logo de Vandal">
-            <p class="text-3xl font-secularOne">Vandal</p>
+            <p class="text-3xl font-secularOne max-xxs:text-lg">Vandal</p>
           </div>
-          <p class="self-end miniContainer bg-sky-300 text-slate-100">7.72</p>
+          <p class="self-end miniContainer bg-sky-300 text-slate-100 max-xxs:text-xl max-xxs:w-20">7.72</p>
         </div>
         <!-- card nº2 -->
-        <div class="flexContainerCol w-80 my-8 shadowMix bg-amber-100 rounded-2xl ">
+        <div class="flexContainerCol w-80 my-8 shadowMix bg-amber-100 rounded-2xl max-xxs:w-full max-xxs:p-2 ">
           <div class="flexContainerRow items-center gap-4">
             <img class="w-12 h-12" loading="lazy" src="https://www.dropbox.com/s/3iqu8lt1ml2jkad/metacritic.png?raw=1" alt="Logo de Metacritic">
-            <p class="text-3xl font-secularOne">Metacritic</p>
+            <p class="text-3xl font-secularOne max-xxs:text-lg">Metacritic</p>
           </div>
-          <p class="self-end miniContainer bg-amber-300 text-slate-100">83</p>
+          <p class="self-end miniContainer bg-amber-300 text-slate-100 max-xxs:text-xl max-xxs:w-20">83</p>
         </div>
       </article>
       <!-- Slaider -->
-      <article class="lg:col-span-4 overflow-hidden">
+      <article class="lg:col-span-4 overflow-hidden md:col-span-3">
         <header>
           <h3>Aircraft</h3>
         </header>
@@ -332,64 +332,89 @@
       </article>
     </section>
   </main>
-  <footer class="bg-cyan-600">
-    <div>
-      <ul>
-        <li>
-          <img class="borderRadiusDotted" src="https://www.dropbox.com/s/8wbz6m7ewhgn9ak/meme_gato-mini.png?raw=1" alt="gato">
-          Autor : Wanderlee Max
+  <!-- footer -->
+  <footer class="bg-cyan-900">
+    <div class="text-white flexContainerRow justify-evenly text-xs gap-4 lg:flex-nowrap lg:p-0">
+      <ul class="w-40 ">
+        <h4 class="titleStyle4" class="">Sobre mí</h4>
+        <li class="text-center">
+          <img class="borderRadiusDotted mx-auto my-4" src="https://www.dropbox.com/s/8wbz6m7ewhgn9ak/meme_gato-mini.png?raw=1" alt="gato">
+          Wanderlee Max
         </li>
+        <li>Entuasiasta del dearrollo web y la programción me la paso bien aprendiendo y practicando.</li>
         <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          <!-- tols -->
+          <h4 class="titleStyle4" class="">Tools</h4>
+          <ul class="inline-flex gap-4 items-center">
+            <li>    
+              <img class="w-12" loading="lazy" src="https://www.dropbox.com/s/9h9ak21s57fr4zk/html.png?raw=1" alt="html">
+            </li>
+            <li>
+              <img class="w-12" loading="lazy" src="https://www.dropbox.com/s/fyz4t8d22wr0sez/js.png?raw=1" alt="Javascript">
+            </li>
+            <li>
+              <img class="w-12" loading="lazy" src="https://www.dropbox.com/s/1qlmhzeohsrjpbm/tailwind-css-icon.png?raw=1" alt="tailwindCss">
+            </li>
+          </ul>
+        </li>
       </ul>
-      <h4>Tools</h4>
-      <ul class="flexContainerRow p-0 gap-4 items-center">
-        <li>    
-          <img class="w-12" loading="lazy" src="https://www.dropbox.com/s/9h9ak21s57fr4zk/html.png?raw=1" alt="html">
+      <!-- Social Media -->
+      <ul class="max-xxs:flex max-xxs:flex-row max-xxs:flex-wrap max-xxs:w-40">
+        <h4 class="titleStyle4 max-xxs:w-full ">Social Media</h4>
+        <li class="w-10 mx-auto my-4 hover:scale-110 duration-200 active:animate-ping">
+          <a href="https://github.com/WanderleeDev" target="_blank">
+            <img loading="lazy" src="https://www.dropbox.com/s/j3ojdy4lt1qej4r/github-mark-white.png?raw=1" alt="Github">
+            <span class="hidden lg:block">Github</span>
+          </a>
         </li>
-        <li>
-          <img class="w-12" loading="lazy" src="https://www.dropbox.com/s/fyz4t8d22wr0sez/js.png?raw=1" alt="Javascript">
+        <li class="w-10 mx-auto my-4 hover:scale-110 duration-200 active:animate-ping">
+          <a href="https://www.linkedin.com/in/wanderlee-max/" target="_blank">
+            <img loading="lazy" src="https://www.dropbox.com/s/4t4yhltho9vz588/linkedin.png?raw=1" alt="linkedin">
+          </a>
+          <span class="hidden lg:block">Linkedin</span>
         </li>
-        <li>
-          <img class="w-12" loading="lazy" src="https://www.dropbox.com/s/1qlmhzeohsrjpbm/tailwind-css-icon.png?raw=1" alt="tailwindCss">
+        <li class="w-10 mx-auto my-4 hover:scale-110 duration-200 active:animate-ping">
+          <a href=" https://campsite.bio/starbreakv" target="_blank">
+            <img class="rounded-50%" loading="lazy" src="https://www.dropbox.com/s/wjp0fuv3i6di3wu/campbio%20.jpg?raw=1" alt="Campsite.bio">
+          </a>
+          <span class="hidden lg:block">Campsite</span>
         </li>
       </ul>
+        <!-- form -->
+        <form class="flexContainerCol items-center bg-sky-500 gap-4 w-11/12 mx-auto my-16 lg:w-96 lg:m-0" action="/form" method="get">
+              <div class="flexContainerRow flex-nowrap items-center gap-4">
+                <img loading="lazy" class="w-1/4" src="https://www.dropbox.com/s/llfty3xusf7s3q6/logo-black%20%281%29.png?raw=1" alt="acecombat Logo">
+              <p class="uppercase font-secularOne font-semibold text-2xl max-xxs:text-base">Acecombat</p>
+            </div>
+            <!-- question 1 -->
+            <div class="inputContainer relative max-w-xs w-11/12">
+              <label class="absolute labelStyleBasic duration-200" for="name">Name</label>
+              <input class="inputStyle w-full" id="name" type="text" name="name">
+            </div>
+            <!-- question 2 -->
+            <div class="inputContainer relative max-w-xs w-11/12">
+              <label class="absolute labelStyleBasic duration-200" for="email">E-mail</label>
+              <input class="inputStyle w-full" id="email" type="email" name="mail">
+            </div>
+            <!-- question 3 -->
+            <div class="inputContainer relative max-w-xs w-11/12">
+              <label class="absolute labelStyleBasic duration-200
+              " for="message">Comentary</label>
+              <textarea class="inputStyle resize-none w-full blockw-" name="message" id="message"></textarea>
+            </div>
+            <!-- terms and Conditions -->
+            <div class="text-center text-white text-xs ">
+              <input class="accent-green-300 align-top" id="conditions" value="true" type="checkbox" name="tyc">
+              <label for="conditions">Aceptar <a href="#" class="animate-pulse text-green-300">términos y condiciones</a></label>
+            </div>
+            <button class="btn bg-sky-400 skyBtnStyle shadowMix rounded-sm" type="submit">Subscribe</button>
+        </form>
     </div>
-    <!-- form -->
-    <form class="flexContainerCol items-center bg-sky-500 gap-4 w-11/12 mx-auto my-16" action="/form" method="get">
-      <div class="flexContainerRow flex-nowrap items-center gap-4">
-        <img loading="lazy" class="w-1/4" src="https://www.dropbox.com/s/llfty3xusf7s3q6/logo-black%20%281%29.png?raw=1" alt="acecombat Logo">
-        <p class="uppercase font-secularOne font-semibold text-2xl">Acecombat</p>
-      </div>
-      <!-- question 1 -->
-      <div class="inputContainer relative">
-        <label class="absolute labelStyleBasic duration-200" for="name">Name</label>
-        <input class="inputStyle w-full" id="name" type="text" name="name">
-      </div>
-      <!-- question 2 -->
-      <div class="inputContainer relative">
-        <label class="absolute labelStyleBasic duration-200" for="email">E-mail</label>
-        <input class="inputStyle w-full" id="email" type="email" name="mail">
-      </div>
-      <!-- question 3 -->
-      <div class="inputContainer relative w-2/4">
-        <label class="absolute labelStyleBasic duration-200
-        " for="message">Comentary</label>
-        <textarea class="inputStyle resize-none bg-red-100 w-full" name="message" id="message"></textarea>
-      </div>
-      <!-- terms and Conditions -->
-      <div class="text-center text-white text-xs ">
-        <input class="accent-green-300 align-top" id="conditions" value="true" type="checkbox" name="tyc">
-        <label for="conditions">Aceptar <a href="#" class="animate-pulse text-green-300">términos y condiciones</a></label>
-      </div>
-      <button class="btn bg-sky-400 skyBtnStyle shadowMix rounded-sm" type="submit">Subscribe</button>
-    </form>
-    <div class="text-sm">
-      <p class="text-center">Presented By <span class="textStyleNamco">namco <sup class="align-sub">&reg;</sup></span></p>
+    <div class="text-sm text-white lg:mt-32">
+      <p class="text-center">Presented By <span class="textStyleNamco pl-2">namco <span class="text-sm relative -top-3 right-3 text-white">&reg;</span></span></p>
       <hr>
-      <p class="text-center p-4">Prácticando tailwindCSS &copy;</p>
+      <p class="text-center p-4"> <time datetime="2023">2023</time> &copy; Prácticando tailwindCSS</p>
     </div>
   </footer>
   <script src="/src/js/main.js"></script>

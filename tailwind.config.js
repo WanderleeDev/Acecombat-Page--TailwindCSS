@@ -54,16 +54,39 @@ module.exports = {
         '50%': '50%',
       },
 
+      screens:{
+        'xxs': '336px'
+      },
+
       borderWidth:{
         '1': '1px',
       },
 
+      spacing:{
+        '5vh': '5vh',
+        '10vh': '10vh',
+        '20vh': '20h',
+        '30vh': '30vh',
+        '40vh': '40vh',
+        '50vh': '50vh',
+        '60vh': '60vh',
+        '70vh': '70vh',
+        '80vh': '80vh',
+        '90vh': '90vh',
+        '100vh': '100vh',
+      },
+      
       //nuevos animaciones creadas
       keyframes:{
         fly:{
           '0%':{width: '25%', opacity: '0'},
           '50%':{width: '35%', opacity: '0.5', transform: 'translateY(8rem)'},
           '100%':{width: '70%', opacity: '1', transform: 'translateY(8rem)'},
+        },
+        fly2:{
+          '0%':{width: '25%', opacity: '0'},
+          '50%':{width: '35%', opacity: '0.5', transform: 'translateY(8rem)'},
+          '100%':{width: '40%', opacity: '1', transform: 'translateY(8rem)'},
         },
 
         upDown:{
@@ -76,12 +99,14 @@ module.exports = {
           '0%':{transform: 'rotateY(0deg)'},
           '100%':{transform: 'rotateY(360deg)'},
         },
+        
       },
 
       //usando las aniamciones creadas las agregamos a animation
       animation:{
         upDown:'upDown 5s linear infinite 2s',
         fly: 'fly 3s linear forwards',
+        fly2: 'fly2 3s linear forwards',
         rotateY: 'rotateY 3s linear infinite'
       },
     },
