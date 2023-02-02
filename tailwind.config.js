@@ -4,23 +4,19 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: ["./public/*.{html,js}","./src/js/main.js"],
   theme: {
+    darkMode: 'class',
     extend: {
       //aqui se extienden o agregaran las propiedades, se especifica la propiedad en este caso font = fontfamily, luego ponemos un nombre y su valor.
-      fontFamily: {
-        'inter':'"Inter",ui-sans-serif, system-ui, sans-serif'
-      },
-      fontFamily:{
-        'secularOne':'"Secular One", ui-sans-serif, system-ui, sans-serif'
-      },
       fontFamily:{
         'Orbitron': '"Orbitron", ui-sans-serif, system-ui, sans-serif'
       },
       
       backgroundImage:{
         'banner': "url('https://www.dropbox.com/s/vn1j7cxn5bti8ps/banner.png?raw=1')",
+        'banner-2': "url('https://img.freepik.com/fotos-premium/fondos-cielo-nocturno-estrellas-luna-nubes-navidad_180633-4785.jpg')",
         'logo': "url('https://www.dropbox.com/s/2v4osqi9ee5jqeu/pngegg.png?raw=1')",
         'logo2': "url('https://www.dropbox.com/s/llfty3xusf7s3q6/logo-black%20%281%29.png?raw=1')",
-        
+        'nubeMacro': "url('https://www.dropbox.com/s/gewkktq2w2n4jo9/macro-nube.png?raw=1')",
       },
       backgroundPosition:{
         'center': 'center',
@@ -49,6 +45,10 @@ module.exports = {
       width:{
         '2400': '2400%',
       },
+      
+      height:{
+        '1pxh': '2px',
+      },
 
       borderRadius:{
         '50%': '50%',
@@ -75,7 +75,7 @@ module.exports = {
         '90vh': '90vh',
         '100vh': '100vh',
       },
-      
+
       //nuevos animaciones creadas
       keyframes:{
         fly:{

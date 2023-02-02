@@ -2,10 +2,12 @@
 const btnDark = document.getElementById('btnDarkMode');
 const darkContainer = document.getElementById('darkButtonContainer');
 const rotar = document.getElementById('rotateImg');
+const tagHtml = document.querySelector('html');
 
 darkContainer.addEventListener("click",function(){
   darkContainer.classList.toggle("bg-sky-700");
   btnDark.classList.toggle("rotate-180");
+  tagHtml.classList.toggle("dark");
 });
 
 //evento input

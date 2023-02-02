@@ -5,7 +5,10 @@ body {
   font-family: 'inter', ui-sans-serif, system-ui, sans-serif;
 }
 /* se debe poner tal cual expecifica google fonts o la web de donde desargarte la fuente  */
-h1,h2,h3,h4,h5,h6 {
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+}
+h2,h3,h4,h5,h6 {
   font-family: 'Secular One', ui-sans-serif, system-ui, sans-serif;
 }
 img {
@@ -14,6 +17,9 @@ img {
 
 @tailwind components;
 /* Se agrupan varias utilidades en un clase para poder comprimir código creando asi componentes */
+.titleStyle1{
+  @apply text-4xl font-bold tracking-wider hidden
+}
 .titleStyle2{
   @apply text-red-300 text-2xl mx-4 border-b-2
 }
@@ -60,16 +66,19 @@ img {
   @apply border-2 border-dotted border-white rounded-50% w-28
 }
 .textStyleNamco{
-  @apply text-red-600 font-Orbitron font-bold text-4xl leading-loose tracking-wide
+  @apply text-red-600 font-bold text-4xl leading-loose tracking-wide font-Orbitron
 }
 
 .beforeStyle{
   @apply relative before:absolute before:left-0  before:w-0 before:top-0 before:bottom-0 before:bg-green-100 before:-z-1 hover:before:w-full before:duration-500
 }
+.beforeUnderline{
+@apply relative before:absolute before:left-0 before:w-0 before:bottom-0 before:h-1pxh before:bg-red-400  before:z-1  hover:before:w-full before:duration-500
+}
 
 @tailwind utilities;
 /* se crean utilidades especificas para situaciones especificas valga la redundancia */
 
-.bordered {
-  border: 1px solid rgb(102, 236, 82);
+.gradientSky {
+  background: linear-gradient(to bottom, #1c92d2, #5dc5fc, #edf8fa );
 }
