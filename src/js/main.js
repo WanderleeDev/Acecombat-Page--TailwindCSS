@@ -4,8 +4,8 @@ const darkContainer = document.getElementById('darkButtonContainer');
 const rotar = document.getElementById('rotateImg');
 const tagHtml = document.querySelector('html');
 //btn mobile
-const btnMobile = document.getElementById('btnMobile') ;
-const menuMobile = document.getElementById('menuMobile');
+const btnMobile = document.getElementById('btnMobile');
+const menuMobile = document.getElementById('mobile');
 //label form
 const inputContainer =  document.querySelectorAll('.inputContainer');
 
@@ -25,7 +25,8 @@ inputContainer.forEach(function(contenedor) {
   });
 });
 
-btnMobile.addEventListener("click",function() {
-  menuMobile.classList.toggle("translate-x-0");
+btnMobile.addEventListener("click", function () {
+  menuMobile.classList.toggle("-translate-x-0");
   menuMobile.classList.toggle("pointer-events-auto");
 });
+
