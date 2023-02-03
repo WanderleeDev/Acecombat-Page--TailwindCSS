@@ -26,7 +26,6 @@ inputContainer.forEach(function(contenedor) {
 });
 
 btnMobile.addEventListener("click", function () {
-  menuMobile.classList.toggle("-translate-x-0");
-  menuMobile.classList.toggle("pointer-events-auto");
+  menuMobile.classList.toggle("hidden");
 });
 
