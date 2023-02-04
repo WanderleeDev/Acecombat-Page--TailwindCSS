@@ -87,15 +87,17 @@ img {
   @apply absolute inset-0 bg-slate-50 duration-1000 rounded-2xl p-6
 }
 .cardDisc{
-  @apply relative w-40 h-40 overflow-hidden sm:w-44 sm:h-44 lg:w-60 lg:h-60 
+  @apply relative w-40 h-40 overflow-hidden sm:w-44 sm:h-44 lg:w-60 lg:h-60 rounded-lg 
 }
 .cardDiscSideA{
   @apply absolute inset-0 p-4
 }
 .cardDiscSideB{
-  @apply absolute inset-0 translate-x-full
+  @apply absolute inset-0 duration-500
 }
-
+.btnCardDisc{
+  @apply z-1 absolute left-2 bottom-2 bg-white rounded-xl p-1 animate-pulse border-1
+}
 @tailwind utilities;
 /* se crean utilidades especificas para situaciones especificas valga la redundancia */
 

@@ -9,6 +9,7 @@ const menuMobile = document.getElementById('mobile');
 //label form
 const inputContainer =  document.querySelectorAll('.inputContainer');
 //card disc
+const btnCardDisc = document.querySelectorAll('.btnCardDisc');
 const cardDisc = document.querySelectorAll('.cardDisc');
 const cardDiscSideA = document.querySelectorAll('.cardDiscSideA');
 const cardDiscSideB = document.querySelectorAll('.cardDiscSideB');
@@ -28,7 +29,7 @@ darkContainer.addEventListener("click",function(){
 inputContainer.forEach(function(contenedor) {
   const labelStyleBasic = contenedor.querySelector('.labelStyleBasic');
   contenedor.addEventListener("click",function(){
-    labelStyleBasic.classList.toggle("-translate-y-8");
+    labelStyleBasic.classList.toggle("");
     labelStyleBasic.classList.toggle("text-white");
   });
 });
@@ -62,4 +63,18 @@ function girarCard(card,objetivo1,objetivo2) {
 //efecto hover en card de valoración
 for (let i = 0; i < card.length; i++) {
   girarCard(card[i], ladoA[i], ladoB[i]);
+}
+
+
+
+
+function mostarCardB(parametro, objetivo1) {
+  parametro.addEventListener("click",function () {
+    objetivo1.classList.toggle('translate-x-full');
+    console.log("h");
+  });
+}
+
+for (let i = 0; i < btnCardDisc.length; i++) {
+  mostarCardB(btnCardDisc[i],cardDiscSideB[i]);
 }
