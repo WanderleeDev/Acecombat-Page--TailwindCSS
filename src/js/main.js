@@ -8,6 +8,14 @@ const btnMobile = document.getElementById('btnMobile');
 const menuMobile = document.getElementById('mobile');
 //label form
 const inputContainer =  document.querySelectorAll('.inputContainer');
+//card disc
+const cardDisc = document.querySelectorAll('.cardDisc');
+const cardDiscSideA = document.querySelectorAll('.cardDiscSideA');
+const cardDiscSideB = document.querySelectorAll('.cardDiscSideB');
+//card review
+const card = document.querySelectorAll('.cardReview');
+const ladoA = document.querySelectorAll('.cardSideA');
+const ladoB = document.querySelectorAll('.cardSideB');
 
 // función agregar dark mode
 darkContainer.addEventListener("click",function(){
@@ -16,7 +24,7 @@ darkContainer.addEventListener("click",function(){
   tagHtml.classList.toggle("dark");
 });
 
-//función para aniamr el label de los formularios
+//función para animar el label de los formularios
 inputContainer.forEach(function(contenedor) {
   const labelStyleBasic = contenedor.querySelector('.labelStyleBasic');
   contenedor.addEventListener("click",function(){
@@ -25,7 +33,33 @@ inputContainer.forEach(function(contenedor) {
   });
 });
 
+//funcion para mostrar la barra mobile
 btnMobile.addEventListener("click", function () {
   menuMobile.classList.toggle("hidden");
 });
 
+//función agregar estilos
+function addStyle(objetivo1, objetivo2) {
+  objetivo1.style.transform = 'perspective(600px) rotateY(180deg)';
+  objetivo2.style.transform = 'perspective(600px) rotateY(360deg)';
+}
+//Función para retirar estilos
+function removeStyle(objetivo1, objetivo2) {
+  objetivo1.style.transform = 'perspective(600px) rotateY(0deg)';
+  objetivo2.style.transform = 'perspective(600px) rotateY(180deg)';
+}
+
+//función girar card (agrega + remover estilos)
+function girarCard(card,objetivo1,objetivo2) {
+  card.addEventListener("mouseenter", function () {
+    addStyle(objetivo1,objetivo2);
+  });
+  card.addEventListener("mouseleave",function () {
+    removeStyle(objetivo1,objetivo2);
+  });
+}
+
+//efecto hover en card de valoración
+for (let i = 0; i < card.length; i++) {
+  girarCard(card[i], ladoA[i], ladoB[i]);
+}

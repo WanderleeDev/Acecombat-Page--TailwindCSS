@@ -21,7 +21,10 @@ img {
   @apply text-4xl font-bold tracking-wider hidden
 }
 .titleStyle2{
-  @apply text-red-300 text-2xl mx-4 border-b-2
+  @apply text-cyan-400 text-2xl mx-4 border-b-2 sm:text-4xl
+}
+.titleStyle3{
+  @apply text-red-300 sm:text-xl border-l-4 border-cyan-400 p-2
 }
 .titleStyle4{
   @apply border-b-2 border-sky-300 border-dotted pt-4 my-4 text-sky-300 text-lg
@@ -68,12 +71,29 @@ img {
 .textStyleNamco{
   @apply text-red-600 font-bold text-4xl leading-loose tracking-wide font-Orbitron
 }
-
 .beforeStyle{
   @apply relative before:absolute before:left-0  before:w-0 before:top-0 before:bottom-0 before:bg-green-100 before:-z-1 hover:before:w-full before:duration-500
 }
 .beforeUnderline{
 @apply relative before:absolute before:left-0 before:w-0 before:bottom-0 before:h-1pxh before:bg-red-400  before:z-1  hover:before:w-full before:duration-500
+}
+.cardReview{
+  @apply h-52 sm:h-44 w-80 my-8 p-4 relative 
+}
+.cardSideA{
+  @apply  absolute bg-sky-100 rounded-2xl duration-1000 inset-0 p-6
+}
+.cardSideB{
+  @apply absolute inset-0 bg-slate-50 duration-1000 rounded-2xl p-6
+}
+.cardDisc{
+  @apply relative w-40 h-40 overflow-hidden sm:w-44 sm:h-44 lg:w-60 lg:h-60 
+}
+.cardDiscSideA{
+  @apply absolute inset-0 p-4
+}
+.cardDiscSideB{
+  @apply absolute inset-0 translate-x-full
 }
 
 @tailwind utilities;
@@ -81,4 +101,13 @@ img {
 
 .gradientSky {
   background: linear-gradient(to bottom, #1c92d2, #5dc5fc, #edf8fa );
+}
+.backface {
+  backface-visibility: hidden;
+}
+.perpectiveCardA{
+  transform: perspective(600px) rotateY(0deg);
+}
+.perpectiveCardB{
+  transform: perspective(600px) rotateY(180deg);
 }
