@@ -128,3 +128,6 @@ img {
 .perpectiveCardB{
   transform: perspective(600px) rotateY(180deg);
 }
+.active{
+  display: block;
+}

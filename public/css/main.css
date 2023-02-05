@@ -1039,6 +1039,10 @@ img {
   top: -1.75rem;
 }
 
+.left-2\/4 {
+  left: 50%;
+}
+
 .-top-3 {
   top: -0.75rem;
 }
@@ -1086,9 +1090,9 @@ img {
   margin-bottom: 3rem;
 }
 
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+.my-40 {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .my-4 {
@@ -1111,6 +1115,10 @@ img {
 
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.block {
+  display: block;
 }
 
 .inline-block {
@@ -1157,8 +1165,8 @@ img {
   height: 3rem;
 }
 
-.h-auto {
-  height: auto;
+.h-6 {
+  height: 1.5rem;
 }
 
 .w-16 {
@@ -1193,12 +1201,12 @@ img {
   width: 3rem;
 }
 
-.w-2400 {
-  width: 2400%;
+.w-96 {
+  width: 24rem;
 }
 
-.w-60 {
-  width: 15rem;
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-56 {
@@ -1224,6 +1232,11 @@ img {
 
 .-translate-x-2\/4 {
   --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-12 {
+  --tw-translate-y: 3rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1351,10 +1364,6 @@ img {
   overflow: hidden;
 }
 
-.overscroll-x-contain {
-  overscroll-behavior-x: contain;
-}
-
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -1446,6 +1455,11 @@ img {
   background-color: rgb(254 226 226 / var(--tw-bg-opacity));
 }
 
+.bg-green-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+}
+
 .bg-yellow-700\/70 {
   background-color: rgb(161 98 7 / 0.7);
 }
@@ -1505,6 +1519,11 @@ img {
 
 .to-gray-200 {
   --tw-gradient-to: #e5e7eb;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-1 {
@@ -1699,6 +1718,10 @@ img {
 
 .perpectiveCardB{
   transform: perspective(600px) rotateY(180deg);
+}
+
+.active{
+  display: block;
 }
 
 .first-letter\:text-3xl::first-letter {
