@@ -84,19 +84,11 @@ for (let i = 0; i < photo.length; i++) {
     photo[i].classList.add('animate-caer');
   });
 }
-//Agregar distintas rotacioens a las fotos
-for (let i = 0; i < photo.length; i++) {
-  let param = Math.round(Math.random()*45);
-  while (!(param === 0 || param ===1 || param === 2 || param ===3 || param === 6 || param === 12 || param === 45)) {
-    param = Math.round(Math.random()*45);
-  }
-  photo[i].classList.add('rotate-' + param);
-}
-//agregar diferentes inclinaciones al figcaption de las fotos
+//Rotar figcapton de las fotos
 for (let i = 0; i < figcaptionPhoto.length; i++) {
-  let param = Math.round( Math.random()*30);
+  let param = Math.round(Math.random()*35);
   while (!(param === 1 || param === 2 || param === 3 || param === 6 || param === 12 || param === 20 || param === 30)) {
-    param = Math.round( Math.random()*30);
+    param = Math.round(Math.random()*35);
   }
   figcaptionPhoto[i].classList.add('-skew-y-' + param);
 }
