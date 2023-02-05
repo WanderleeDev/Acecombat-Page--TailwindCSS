@@ -2056,12 +2056,12 @@ img {
     display: block;
   }
 
-  .lg\:w-96 {
-    width: 24rem;
-  }
-
   .lg\:w-64 {
     width: 16rem;
+  }
+
+  .lg\:w-96 {
+    width: 24rem;
   }
 
   .lg\:grid-cols-\[minmax\(220px\2c 4\)_100px\] {
