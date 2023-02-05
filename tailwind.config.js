@@ -76,6 +76,21 @@ module.exports = {
         '100vh': '100vh',
       },
 
+      skew:{
+        '20': '20deg',
+        '30': '30deg',
+        '40': '40deg',
+        '50': '50deg',
+        '60': '60deg',
+        '70': '70deg',
+        '90': '90deg',
+        '100': '100deg',
+        '110': '110deg',
+        '120': '120deg',
+        '130': '130deg',
+        '140': '140deg',
+      },
+
       //nuevos animaciones creadas
       keyframes:{
         fly:{
@@ -88,7 +103,6 @@ module.exports = {
           '50%':{width: '35%', opacity: '0.5', transform: 'translateY(8rem)'},
           '100%':{width: '40%', opacity: '1', transform: 'translateY(8rem)'},
         },
-
         upDown:{
           '0%':{transform: 'translateX(0rem)'},
           '35%':{transform: 'translateX(-1rem)'},
@@ -99,7 +113,10 @@ module.exports = {
           '0%':{transform: 'rotateY(0deg)'},
           '100%':{transform: 'rotateY(360deg)'},
         },
-        
+        caer:{
+          '0%':{transform: 'translateY(0rem) rotate(0deg)', opacity:'1'},
+          '100%':{transform: 'translateY(24rem) rotate(180deg)', opacity:'0'},
+        },
       },
 
       //usando las aniamciones creadas las agregamos a animation
@@ -107,7 +124,8 @@ module.exports = {
         upDown:'upDown 5s linear infinite 2s',
         fly: 'fly 3s linear forwards',
         fly2: 'fly2 3s linear forwards',
-        rotateY: 'rotateY 3s linear infinite'
+        rotateY: 'rotateY 3s linear infinite',
+        caer: 'caer 1.5s linear forwards',
       },
     },
   },

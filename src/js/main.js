@@ -17,7 +17,9 @@ const cardDiscSideB = document.querySelectorAll('.cardDiscSideB');
 const card = document.querySelectorAll('.cardReview');
 const ladoA = document.querySelectorAll('.cardSideA');
 const ladoB = document.querySelectorAll('.cardSideB');
-
+//games pictures
+const photo = document.querySelectorAll('.photoStyle');
+const figcaptionPhoto = document.querySelectorAll('.figcaptionStyle');
 // función agregar dark mode
 darkContainer.addEventListener("click",function(){
   darkContainer.classList.toggle("bg-sky-700");
@@ -44,13 +46,14 @@ function addStyle(objetivo1, objetivo2) {
   objetivo1.style.transform = 'perspective(600px) rotateY(180deg)';
   objetivo2.style.transform = 'perspective(600px) rotateY(360deg)';
 }
+
 //Función para retirar estilos
 function removeStyle(objetivo1, objetivo2) {
   objetivo1.style.transform = 'perspective(600px) rotateY(0deg)';
   objetivo2.style.transform = 'perspective(600px) rotateY(180deg)';
 }
 
-//función girar card (agrega + remover estilos)
+//función girar card al pasar el mouse (agrega + remover estilos)
 function girarCard(card,objetivo1,objetivo2) {
   card.addEventListener("mouseenter", function () {
     addStyle(objetivo1,objetivo2);
@@ -60,21 +63,40 @@ function girarCard(card,objetivo1,objetivo2) {
   });
 }
 
+//función para agregar una clase al hacer click
+function mostarCardB(parametro, objetivo1) {
+  parametro.addEventListener("click",function () {
+    objetivo1.classList.toggle('translate-x-full');
+  });
+}
+
 //efecto hover en card de valoración
 for (let i = 0; i < card.length; i++) {
   girarCard(card[i], ladoA[i], ladoB[i]);
 }
-
-
-
-
-function mostarCardB(parametro, objetivo1) {
-  parametro.addEventListener("click",function () {
-    objetivo1.classList.toggle('translate-x-full');
-    console.log("h");
-  });
-}
-
+//Mostara portada del juego
 for (let i = 0; i < btnCardDisc.length; i++) {
   mostarCardB(btnCardDisc[i],cardDiscSideB[i]);
+}
+//Hacer caer foto 
+for (let i = 0; i < photo.length; i++) {
+  photo[i].addEventListener("click",function () {
+    photo[i].classList.add('animate-caer');
+  });
+}
+//Agregar distintas rotacioens a las fotos
+for (let i = 0; i < photo.length; i++) {
+  let param = Math.round(Math.random()*45);
+  while (!(param === 0 || param ===1 || param === 2 || param ===3 || param === 6 || param === 12 || param === 45)) {
+    param = Math.round(Math.random()*45);
+  }
+  photo[i].classList.add('rotate-' + param);
+}
+//agregar diferentes inclinaciones al figcaption de las fotos
+for (let i = 0; i < figcaptionPhoto.length; i++) {
+  let param = Math.round( Math.random()*30);
+  while (!(param === 1 || param === 2 || param === 3 || param === 6 || param === 12 || param === 20 || param === 30)) {
+    param = Math.round( Math.random()*30);
+  }
+  figcaptionPhoto[i].classList.add('-skew-y-' + param);
 }
