@@ -113,6 +113,11 @@ img {
 .figcaptionStyle{
   @apply absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 bg-white text-center rotate-45 -z-1 hover:text-white duration-300
 }
+.btnSlaider{
+  @apply w-4 h-14 bg-slate-500 text-slate-50 hover:bg-slate-100  hover:text-slate-500 focus:text-slate-500 focus:bg-slate-100 hover:scale-105 duration-200
+}
+
+
 @tailwind utilities;
 /* se crean utilidades especificas para situaciones especificas valga la redundancia */
 
@@ -130,4 +135,16 @@ img {
 }
 .active{
   display: block;
+}
+.widthCalc{
+  width: calc(100% /24);
+}
+.trasnladarse{
+  transform: translateX(-4.16%);
+}
+.neomorfismo{
+  border-radius: 16px;
+  background: #e0e0e0;
+  box-shadow:  7px 7px 14px #a6a6a6,
+             -7px -7px 14px #ffffff;
 }

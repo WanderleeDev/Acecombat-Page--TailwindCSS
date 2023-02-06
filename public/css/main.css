@@ -987,6 +987,33 @@ img {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.btnSlaider {
+  height: 3.5rem;
+  width: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(248 250 252 / var(--tw-text-opacity));
+  transition-duration: 200ms;
+}
+
+.btnSlaider:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.btnSlaider:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
 .fixed {
   position: fixed;
 }
@@ -1039,8 +1066,16 @@ img {
   top: -1.75rem;
 }
 
-.left-2\/4 {
-  left: 50%;
+.top-2\/4 {
+  top: 50%;
+}
+
+.left-4 {
+  left: 1rem;
+}
+
+.right-4 {
+  right: 1rem;
 }
 
 .-top-3 {
@@ -1121,6 +1156,10 @@ img {
   display: inline-block;
 }
 
+.flex {
+  display: flex;
+}
+
 .inline-flex {
   display: inline-flex;
 }
@@ -1161,10 +1200,6 @@ img {
   height: 3rem;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .w-16 {
   width: 4rem;
 }
@@ -1197,12 +1232,12 @@ img {
   width: 3rem;
 }
 
-.w-96 {
-  width: 24rem;
+.w-10\/12 {
+  width: 83.333333%;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-2400 {
+  width: 2400%;
 }
 
 .w-56 {
@@ -1228,11 +1263,6 @@ img {
 
 .-translate-x-2\/4 {
   --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-12 {
-  --tw-translate-y: 3rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1332,6 +1362,10 @@ img {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .justify-around {
   justify-content: space-around;
 }
@@ -1386,6 +1420,22 @@ img {
 
 .rounded-tl-3xl {
   border-top-left-radius: 1.5rem;
+}
+
+.rounded-tl-lg {
+  border-top-left-radius: 0.5rem;
+}
+
+.rounded-bl-lg {
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-tr-lg {
+  border-top-right-radius: 0.5rem;
+}
+
+.rounded-br-lg {
+  border-bottom-right-radius: 0.5rem;
 }
 
 .border-1 {
@@ -1451,11 +1501,6 @@ img {
   background-color: rgb(254 226 226 / var(--tw-bg-opacity));
 }
 
-.bg-green-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
-}
-
 .bg-yellow-700\/70 {
   background-color: rgb(161 98 7 / 0.7);
 }
@@ -1483,6 +1528,10 @@ img {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
 .from-red-200 {
   --tw-gradient-from: #fecaca;
   --tw-gradient-to: rgb(254 202 202 / 0);
@@ -1492,6 +1541,12 @@ img {
 .from-gray-200 {
   --tw-gradient-from: #e5e7eb;
   --tw-gradient-to: rgb(229 231 235 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-gray-500 {
+  --tw-gradient-from: #6b7280;
+  --tw-gradient-to: rgb(107 114 128 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1517,9 +1572,8 @@ img {
   --tw-gradient-to: #e5e7eb;
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+.to-white {
+  --tw-gradient-to: #fff;
 }
 
 .p-1 {
@@ -1718,6 +1772,21 @@ img {
 
 .active{
   display: block;
+}
+
+.widthCalc{
+  width: calc(100% /24);
+}
+
+.trasnladarse{
+  transform: translateX(-4.16%);
+}
+
+.neomorfismo{
+  border-radius: 16px;
+  background: #e0e0e0;
+  box-shadow:  7px 7px 14px #a6a6a6,
+             -7px -7px 14px #ffffff;
 }
 
 .first-letter\:text-3xl::first-letter {
@@ -2030,6 +2099,10 @@ img {
 
   .lg\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .lg\:gap-24 {
+    gap: 6rem;
   }
 
   .lg\:p-0 {
