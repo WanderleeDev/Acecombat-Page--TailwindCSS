@@ -1976,10 +1976,6 @@ img {
     flex-wrap: wrap;
   }
 
-  .md\:gap-14 {
-    gap: 3.5rem;
-  }
-
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
