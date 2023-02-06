@@ -21,26 +21,17 @@ const ladoB = document.querySelectorAll('.cardSideB');
 const photo = document.querySelectorAll('.photoStyle');
 const figcaptionPhoto = document.querySelectorAll('.figcaptionStyle');
 //Slaider aircraft
-const slaiderContent = document.querySelectorAll('.slaiderContent');
-const btnSlaiderLeft = document.querySelector('#btnSlaiderLeft');
-const btnSlaiderRight = document.querySelector('#btnSlaiderRight');
-let index = 0;
-let imgMostrada = function () {
-  slaiderContent[index].classList.add('active');
-};
+const carrusel = document.getElementById('slaider');
+const boton = document.querySelectorAll('.boton');
 
-imgMostrada()
-
-btnSlaiderRight.addEventListener("click", function () {
-  slaiderContent[index].classList.remove('active');
-  if (index >= slaiderContent.length-1) {
-    index = 0;
-  } else {
-    index++
-  }
-  imgMostrada()
-})
-
+for (let i = 0; i < boton.length; i++) {
+  boton[i].addEventListener("click", function () {
+    let posicion = i;
+    let translate = i * -4;
+    carrusel.style.transform = 'translateX(-4.16% * i)';
+    console.log("as");
+  });
+}
 
 
 // función agregar dark mode
