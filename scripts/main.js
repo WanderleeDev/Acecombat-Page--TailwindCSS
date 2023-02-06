@@ -20,6 +20,28 @@ const ladoB = document.querySelectorAll('.cardSideB');
 //games pictures
 const photo = document.querySelectorAll('.photoStyle');
 const figcaptionPhoto = document.querySelectorAll('.figcaptionStyle');
+//Slaider aircraft
+const slaiderContent = document.querySelectorAll('.slaiderContent');
+const btnSlaiderLeft = document.querySelector('#btnSlaiderLeft');
+const btnSlaiderRight = document.querySelector('#btnSlaiderRight');
+let index = 0;
+let imgMostrada = function () {
+  slaiderContent[index].classList.add('active');
+};
+
+imgMostrada()
+
+btnSlaiderRight.addEventListener("click", function () {
+  slaiderContent[index].classList.remove('active');
+  if (index >= slaiderContent.length-1) {
+    index = 0;
+  } else {
+    index++
+  }
+  imgMostrada()
+})
+
+
 
 // función agregar dark mode
 darkContainer.addEventListener("click",function(){
