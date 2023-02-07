@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en" class="scroll-smooth dark:bg-zinc-700">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,8 @@
   <title>AceCombat</title>
   <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
-<body>
+<body class="text-white
+">
   <header>
     <nav class="relative">
       <ul>
@@ -49,7 +50,7 @@
                   </a>
                 </li>
                 <!-- btn dark mode -->
-                <li id="darkButtonContainer" class= "containerBtnDark">
+                <li id="darkButtonContainer" class= "containerBtnDark shadowYellow drop-shadow text-amber-200">
                   <button id="btnDarkMode" class="darkModeBtn">
                     <svg class="h-8 w-full text-yellow-400"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="4" />  <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7" />
                     </svg>
@@ -116,9 +117,9 @@
   </header>
   <main>
     <section id="home">
-      <header>
+      <header class="relative gradientSky bg-nubeMacro h-50vh md:h-90vh overflow-hidden dark:bg-gradient-to-b from-sky-900 via-sky-700 to-sky-500/90">
         <!-- banner -->
-        <div class="relative gradientSky bg-nubeMacro h-50vh md:h-90vh overflow-hidden">
+        <div>
           <div>
             <img class="absolute top-0" src="https://www.dropbox.com/s/gewkktq2w2n4jo9/macro-nube.png?raw=1" alt="nubes fondo">
           </div>
@@ -130,6 +131,8 @@
             </div>
           </div>
         </div>
+        <!-- star -->
+        <div class="starStyle shadowStar animate-pulse scale-75 hidden dark:block"></div>
       </header>
       <button class="btn skyBtnStyle shadowMix relative bottom-5 left-1/2 -translate-x-2/4 ">
         Explore More
@@ -202,18 +205,18 @@
         <header>
           <h3 class="titleStyle3">Ace Combat 2</h3>
         </header>
-        <figure class="flexContainerRow  justify-evenly items-center gap-2 relative bg-black">
+        <figure class="flexContainerRow  justify-evenly items-center gap-2 relative bg-black dark:bg-zinc-100">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-9" src="https://www.dropbox.com/s/rryzp6yocchep0s/badge-5.jpg?raw=1" alt="badge" loading="lazy">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-9" src="https://www.dropbox.com/s/gpik2unsz9q6fk7/badge-6.jpg?raw=1" alt="badge" loading="lazy">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-9" src="https://www.dropbox.com/s/0lzpoc0i7pvuzxc/badge.jpg?raw=1" alt="badge" loading="lazy">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-9" src="https://www.dropbox.com/s/0lzpoc0i7pvuzxc/badge.jpg?raw=1" alt="badge" loading="lazy">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-9" src="https://www.dropbox.com/s/7ub6p9x6h6ho385/badge-3.jpg?raw=1" alt="badge" loading="lazy">
-          <figcaption class="absolute btn bg-white -bottom-7">Bagdes</figcaption>
+          <figcaption class="absolute btn bg-white -bottom-7 dark:bg-zinc-700 dark:text-amber-400">Bagdes</figcaption>
         </figure>
         <p class="my-12 text-center text-sm p-8">
           Ace Combat 2 (エースコンバット2 Ēsu Konbatto Tsu?) es un videojuego de simulador de vuelo de combate de 1997 desarrollado y publicado para PlayStation por Namco.
         </p>
-        <figure class="flexContainerRow  justify-evenly items-center gap-2 relative bg-black">
+        <figure class="flexContainerRow justify-evenly items-center gap-2 relative bg-black dark:bg-zinc-100">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/5kw06w5wf5br22k/medal-2.jpg?raw=1" alt="badge" loading="lazy">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/5j79ggk6q41z96n/medal-3.jpg?raw=1" alt="badge" loading="lazy">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/dwdzeeuxmcgmwzh/medal-4.jpg?raw=1" alt="badge" loading="lazy">
@@ -224,7 +227,7 @@
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/4ggzte5979d9drn/medal-9.jpg?raw=1" alt="badge" loading="lazy">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/w7yyvb85plylr7g/medal-11.jpg?raw=1" alt="badge" loading="lazy">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/f85lmaez0b9yc3c/medal.jpg?raw=1" alt="badge" loading="lazy">
-          <figcaption class="absolute btn bg-white -top-7">Medal</figcaption>
+          <figcaption class="absolute btn bg-white -top-7 dark:bg-zinc-700 dark:text-amber-400">Medal</figcaption>
         </figure>
       </article>
       <!-- Video -->
@@ -241,18 +244,18 @@
       <!-- Datos -->
       <div class="flexContainerRow gap-8 flex-nowrap justify-center items-center lg:col-span-2 md:row-span-2 md:flex-wrap max-xxs:flex-wrap">
         <img class="w-36 hover:bg-gray-200 rounded-xl duration-300 p-4 sm:w-44 md:w-64" src="https://www.dropbox.com/s/tjzsq8g9qtp547u/playstation.png?raw=1" alt="Logo de playstation">
-        <ul class="list-disc marker:text-red-500 max-xxs:mx-6">
+        <ul class="list-disc marker:text-red-500 max-xxs:mx-6 dark:marker:text-amber-400">
           <li class="text-sm leading-loose beforeStyle">Desarrollador: Namco</li>
           <li class="text-sm leading-loose beforeStyle">Género: Simulador de vuelo de combate</li>
           <li class="text-sm leading-loose beforeStyle">Formato: CD-ROM</li>
           <li class="text-sm leading-loose ">
             <p class="beforeStyle">Lanzamientos:</p>
             <ul>
-              <li class="text-xs"><span class="text-sky-500">JP </span><time datetime="1997-05-30">30 de mayo de 1997</time>
+              <li class="text-xs"><span class="text-sky-500 dark:text-amber-300">JP </span><time datetime="1997-05-30">30 de mayo de 1997</time>
               </li>
-              <li class="text-xs"><span class="text-sky-500">NA </span><time datetime="1997-07-31">31 de julio de 1997</time>
+              <li class="text-xs"><span class="text-sky-500 dark:text-amber-300">NA </span><time datetime="1997-07-31">31 de julio de 1997</time>
               </li>
-              <li class="text-xs"><span class="text-sky-500">EU </span><time datetime="1997-10">Octubre de 1997</time></li>
+              <li class="text-xs"><span class="text-sky-500 dark:text-amber-300">EU </span><time datetime="1997-10">Octubre de 1997</time></li>
             </ul>
           </li>
         </ul>
@@ -267,16 +270,16 @@
           <!-- Card lado A -->
           <figure class="cardSideA backface shadowMix perpectiveCardA">
             <img class="w-12 h-12 inline-block mt-3" loading="lazy" src="https://www.dropbox.com/s/s2hhctuqpok4v9e/Vandal_logo%20%281%29.png?raw=1" alt="Logo de Vandal">
-            <figcaption class="inline-block align-middle mt-3 ml-3 text-3xl font-secularOne max-xxs:text-lg beforeCardReview  before:content-['7.72'] before:bg-sky-300">
+            <figcaption class="inline-block align-middle mt-3 ml-3 text-3xl font-secularOne max-xxs:text-lg beforeCardReview  before:content-['7.72'] before:bg-sky-300 dark:text-black">
               Vandal
             </figcaption>
           </figure>            
           <!-- Card lado B -->
-          <article class="cardSideB backface shadowMix perpectiveCardB">
+          <article class="cardSideB backface shadowMix perpectiveCardB dark:bg-slate-500">
             <header>
-              <h5 class="text-sky-300 first-letter:text-3xl">Valoración:</h5>
+              <h5 class="text-sky-300 first-letter:text-3xl font-bold -tracking-tighter">Valoración:</h5>
             </header>
-            <div>
+            <div class="">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id mollitia ut aliquid 
             </div>
             <div class=" text-yellow-400 float-right">
@@ -291,15 +294,15 @@
           <!-- Card lado A -->
           <figure class="cardSideA backface shadowMix .perpectiveCardA bg-amber-100">
             <img class="w-12 h-12 inline-block mt-3" loading="lazy" src="https://www.dropbox.com/s/3iqu8lt1ml2jkad/metacritic.png?raw=1" alt="Logo de Metacritic">
-            <figcaption class="inline-block align-middle mt-3 ml-3 text-3xl font-secularOne max-xxs:text-lg beforeCardReview before:content-['83'] before:bg-amber-300 ">
+            <figcaption class="inline-block align-middle mt-3 ml-3 text-3xl font-secularOne max-xxs:text-lg beforeCardReview before:content-['83'] before:bg-amber-300 dark:text-black">
               Metacritic
             </figcaption>
           </figure> 
           
           <!-- Card lado B -->
-          <article class="cardSideB backface shadowMix perpectiveCardB">
+          <article class="cardSideB backface shadowMix perpectiveCardB dark:bg-slate-500">
             <header>
-              <h5 class="text-amber-300 first-letter:text-3xl">Valoración:</h5>
+              <h5 class="text-amber-300 first-letter:text-3xl font-bold -tracking-tighter">Valoración:</h5>
             </header>
             <div>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id mollitia ut aliquid 
@@ -317,14 +320,14 @@
           <!-- Card lado A -->
           <figure class="cardSideA backface shadowMix .perpectiveCardA bg-red-100">
             <img class="w-12 h-12 inline-block mt-3 rounded-50%" loading="lazy" src="https://www.dropbox.com/s/jv2nvkousyli83i/famitsu.jpg?raw=1" alt="Logo de Famitsu">
-            <figcaption class="inline-block align-middle mt-3 ml-3 text-3xl font-secularOne max-xxs:text-lg beforeCardReview before:bg-red-300 before:content-['30/40']">
+            <figcaption class="inline-block align-middle mt-3 ml-3 text-3xl font-secularOne max-xxs:text-lg beforeCardReview before:bg-red-300 before:content-['30/40'] dark:text-black">
               Famitsu
             </figcaption>
           </figure>
           <!-- Card lado B -->
-          <article class="cardSideB backface shadowMix perpectiveCardB">
+          <article class="cardSideB backface shadowMix perpectiveCardB dark:bg-slate-500">
             <header>
-              <h5 class="text-red-300 first-letter:text-3xl">Valoración:</h5>
+              <h5 class="text-red-300 first-letter:text-3xl font-bold -tracking-tighter">Valoración:</h5>
             </header>
             <div>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id mollitia ut aliquid 
@@ -340,7 +343,7 @@
         </div>
       </section>    
       <!-- Slaider -->
-      <article class=" relative lg:col-span-4 md:col-span-3 my-40 overflow-hidden bg-gradient-to-br from-gray-500  to-white">
+      <article class=" relative lg:col-span-4 md:col-span-3 my-40 overflow-hidden  dark:bg-zinc-700">
         <header>
           <h3 class="titleStyle3">Aircraft</h3>
         </header>
@@ -480,6 +483,34 @@
         </div>
       </article>
     </section>
+    <section>
+      <header>
+        <h3>Audios</h3>
+      </header>
+      <ul class="flexContainerCol w-full items-center justify-center">
+        <li class="h-16 w-16 bg-red-200 rounded-full hover:w-72 origin-right duration-200 self-start overflow-hidden p-2">
+          <div class=" relative before:absolute before:h-12 before:content-['star'] before:text-center before:text-amber-300 before:float-right  before:rounded-50%  before:z-1">
+            <audio class="w-12 h-12 hover:w-full float-right duration-300  " controls src="/src/aseets/La-mujer-de-nieve .mp3">
+              No se reconoce el audio
+            </audio>
+          </div>
+            <span class="p-2 float-left">
+              music n° 1
+            </span>
+        </li>
+        <li class="h-16 w-16 bg-orange-200 rounded-full hover:w-60 origin-right duration-200 self-end">
+          <audio src=""></audio>
+        </li>
+        <li class="h-16 w-16 bg-yellow-200 rounded-full hover:w-60 origin-right duration-200 self-start">
+          <audio >
+            pista 1
+          </audio>
+        </li>
+        <li class="h-16 w-16 bg-orange-200 rounded-full hover:w-60 origin-right duration-200 self-end">
+          <audio src=""></audio>
+        </li>
+      </ul>
+    </section>
     <!-- Screen game -->
     <section class="overflow-hidden bg-yellow-700/70 py-8 flexContainerRow justify-around items-center gap-8 md:gap-13 lg:gap-24">
       <header class="w-full">
@@ -564,7 +595,7 @@
           <img class="borderRadiusDotted mx-auto my-4" src="https://www.dropbox.com/s/8wbz6m7ewhgn9ak/meme_gato-mini.png?raw=1" alt="gato">
           Wanderlee Max
         </li>
-        <li class="">
+        <li>
           Entuasiasta del dearrollo web y la programción me la paso bien aprendiendo y practicando.
         </li>
         <li>
