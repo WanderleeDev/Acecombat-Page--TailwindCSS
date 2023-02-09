@@ -17,6 +17,7 @@ module.exports = {
         'logo': "url('https://www.dropbox.com/s/2v4osqi9ee5jqeu/pngegg.png?raw=1')",
         'logo2': "url('https://www.dropbox.com/s/llfty3xusf7s3q6/logo-black%20%281%29.png?raw=1')",
         'nubeMacro': "url('https://www.dropbox.com/s/gewkktq2w2n4jo9/macro-nube.png?raw=1')",
+        'portadaDisc1': "url('https://www.dropbox.com/s/f13fg5whv5fr36z/portada2.jpg?raw=1')",
       },
       backgroundPosition:{
         'center': 'center',
@@ -117,6 +118,29 @@ module.exports = {
           '0%':{transform: 'translateY(0rem) rotate(0deg)', opacity:'1'},
           '100%':{transform: 'translateY(24rem) rotate(180deg)', opacity:'0'},
         },
+        moveTitle:{
+          '0%':{borderLeftWidth: '0vw'},
+          '30%':{borderLeftWidth: '20vw'},
+          '60%':{borderLeftWidth: '44vw' },
+          '100%':{borderLeftWidth: '44vw', borderColor: 'transparent', fontSize: '1.5rem'},
+        },
+        musicBar:{
+          '0%':{height: '0.25rem'},
+          '20%':{height: '1rem'},
+          '40%':{height: '1.5rem' },
+          '60%':{height: '0.25rem'},
+          '80%':{height: '1.2rem'},
+          '100%':{height: '0.25rem'},
+        },
+        shadowMove:{
+          '0%': {textShadow:'1px -1px 0 #c2c2c2;'},
+          '25%': {textShadow:'-1px -1px 0 #242424;'},
+          '50%': {textShadow:'-1px 1px 0 #9d9d9d;'},
+          '75%': {textShadow:'1px 1px 0 #242424'},
+          '100%': {textShadow:'1px -1px 0 #c2c2c2;'},
+        },
+          
+
       },
 
       //usando las aniamciones creadas las agregamos a animation
@@ -126,6 +150,11 @@ module.exports = {
         fly2: 'fly2 3s linear forwards',
         rotateY: 'rotateY 3s linear infinite',
         caer: 'caer 1.5s linear forwards',
+        moveTitle: 'moveTitle 1.5s linear forwards',
+        musicBar: 'musicBar 2.5s ease-in-out  infinite',
+        musicBar2: 'musicBar 2.5s ease-in-out 0.5s infinite',
+        musicBar3: 'musicBar 2.5s ease-in-out 1s infinite',
+        shadowMove: 'shadowMove linear 2000ms infinite'
       },
     },
   },

@@ -13,20 +13,19 @@
   <title>AceCombat</title>
   <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
-<body class="text-white
-">
+<body>
   <header>
     <nav class="relative">
       <ul>
         <!-- Barra de navegación Desktop -->
-        <li class="fixed top-0 left-0 right-0 z-2 hidden md:block">
+        <li class="fixed top-0 left-0 right-0 z-5 hidden md:block">
           <ul class="flexContainerRow justify-evenly items-center bg-transparent text-sm text- font-bold tracking-wider">
             <li>
               <a href="/public/index.html">
                 <img class="w-16" src="https://www.dropbox.com/s/2v4osqi9ee5jqeu/pngegg.png?raw=1" alt="Acecombat logo">
               </a>
             </li>
-            <li>
+            <li class="">
               <ul class="flexContainerRow gap-8 text-white">
                 <li class="beforeUnderline"><a href="#home">Home</a></li>
                 <li class="beforeUnderline"><a href="#ediciones">Ediciones</a></li>
@@ -35,7 +34,7 @@
               </ul>
             </li>
             <li>
-              <ul class="flexContainerRow gap-4 bg-slate-100 shadowMix rounded-3xl">
+              <ul class="flexContainerRow gap-4 bg-slate-100 shadowMix rounded-3xl dark:bg-slate-400">
                 <li>
                   <a href="#">
                     <svg class="navbarIcon text-red-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="10" cy="10" r="7" />  <line x1="21" y1="21" x2="15" y2="15" />
@@ -50,9 +49,9 @@
                   </a>
                 </li>
                 <!-- btn dark mode -->
-                <li id="darkButtonContainer" class= "containerBtnDark shadowYellow drop-shadow text-amber-200">
+                <li id="darkButtonContainer" class= "containerBtnDark shadowCurrent text-amber-300">
                   <button id="btnDarkMode" class="darkModeBtn">
-                    <svg class="h-8 w-full text-yellow-400"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="4" />  <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7" />
+                    <svg class="h-8 w-full text-yellow-400 dark:text-amber-400"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="4" />  <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7" />
                     </svg>
                     <svg class="h-8 w-full text-yellow-400 rotate-90"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
@@ -140,7 +139,7 @@
     </section>
 
     <!-- galeria n°1 -->
-    <section id="ediciones" class="mt-16">
+    <section id="ediciones" class="mt-32 mb-40">
       <header>
         <h2 class="titleStyle2">Ediciones</h2>
       </header>
@@ -201,11 +200,11 @@
         <h2 class="titleStyle2">Info</h2>
       </header>
       <!-- Description -->
-      <article class="lg:col-span-4 md:col-span-3">
+      <article class="lg:w-10/12 lg:col-span-4 md:col-span-3 mx-auto">
         <header>
           <h3 class="titleStyle3">Ace Combat 2</h3>
         </header>
-        <figure class="flexContainerRow  justify-evenly items-center gap-2 relative bg-black dark:bg-zinc-100">
+        <figure class="flexContainerRow  justify-evenly items-center gap-2 relative bg-black">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-9" src="https://www.dropbox.com/s/rryzp6yocchep0s/badge-5.jpg?raw=1" alt="badge" loading="lazy">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-9" src="https://www.dropbox.com/s/gpik2unsz9q6fk7/badge-6.jpg?raw=1" alt="badge" loading="lazy">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-9" src="https://www.dropbox.com/s/0lzpoc0i7pvuzxc/badge.jpg?raw=1" alt="badge" loading="lazy">
@@ -213,10 +212,10 @@
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-9" src="https://www.dropbox.com/s/7ub6p9x6h6ho385/badge-3.jpg?raw=1" alt="badge" loading="lazy">
           <figcaption class="absolute btn bg-white -bottom-7 dark:bg-zinc-700 dark:text-amber-400">Bagdes</figcaption>
         </figure>
-        <p class="my-12 text-center text-sm p-8">
+        <p class="my-12 text-center text-sm p-8 dark:text-white">
           Ace Combat 2 (エースコンバット2 Ēsu Konbatto Tsu?) es un videojuego de simulador de vuelo de combate de 1997 desarrollado y publicado para PlayStation por Namco.
         </p>
-        <figure class="flexContainerRow justify-evenly items-center gap-2 relative bg-black dark:bg-zinc-100">
+        <figure class="flexContainerRow justify-evenly items-center gap-2 relative bg-black">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/5kw06w5wf5br22k/medal-2.jpg?raw=1" alt="badge" loading="lazy">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/5j79ggk6q41z96n/medal-3.jpg?raw=1" alt="badge" loading="lazy">
           <img class="hover:scale-110 hover:opacity-90 w-16 duration-300 max-xxs:w-8" src="https://www.dropbox.com/s/dwdzeeuxmcgmwzh/medal-4.jpg?raw=1" alt="badge" loading="lazy">
@@ -242,10 +241,12 @@
       </div>
       
       <!-- Datos -->
-      <div class="flexContainerRow gap-8 flex-nowrap justify-center items-center lg:col-span-2 md:row-span-2 md:flex-wrap max-xxs:flex-wrap">
-        <img class="w-36 hover:bg-gray-200 rounded-xl duration-300 p-4 sm:w-44 md:w-64" src="https://www.dropbox.com/s/tjzsq8g9qtp547u/playstation.png?raw=1" alt="Logo de playstation">
-        <ul class="list-disc marker:text-red-500 max-xxs:mx-6 dark:marker:text-amber-400">
-          <li class="text-sm leading-loose beforeStyle">Desarrollador: Namco</li>
+      <div class="flexContainerRow gap-8 flex-nowrap justify-center items-center lg:col-span-2 md:row-span-2 md:flex-wrap max-xxs:flex-wrap dark:text-white">
+        <img class="w-36 hover:bg-gray-200 rounded-xl duration-300 p-4 sm:w-44 md:w-64 lg:w-48" src="https://www.dropbox.com/s/tjzsq8g9qtp547u/playstation.png?raw=1" alt="Logo de playstation">
+        <ul class="list-disc marker:text-red-500 max-xxs:mx-6 dark:marker:text-amber-400 pr-24">
+          <li class="text-sm leading-loose beforeStyle">Desarrollador: Namco 	
+          </li>
+          </li>
           <li class="text-sm leading-loose beforeStyle">Género: Simulador de vuelo de combate</li>
           <li class="text-sm leading-loose beforeStyle">Formato: CD-ROM</li>
           <li class="text-sm leading-loose ">
@@ -261,7 +262,7 @@
         </ul>
       </div>
       <!-- Valoraciones -->
-      <section class="flexContainerRow justify-around gap-4 lg:col-span-4 md:col-span-3">
+      <section class="flexContainerRow justify-around gap-4 lg:col-span-4 md:col-span-3>
         <header class="w-full">
           <h3 class="titleStyle3">Valoraciones</h3>
         </header>
@@ -279,7 +280,7 @@
             <header>
               <h5 class="text-sky-300 first-letter:text-3xl font-bold -tracking-tighter">Valoración:</h5>
             </header>
-            <div class="">
+            <div class="dark:text-white" >
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id mollitia ut aliquid 
             </div>
             <div class=" text-yellow-400 float-right">
@@ -304,7 +305,7 @@
             <header>
               <h5 class="text-amber-300 first-letter:text-3xl font-bold -tracking-tighter">Valoración:</h5>
             </header>
-            <div>
+            <div class="dark:text-white">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id mollitia ut aliquid 
             </div>
             <div class=" text-yellow-400 float-right">
@@ -329,7 +330,7 @@
             <header>
               <h5 class="text-red-300 first-letter:text-3xl font-bold -tracking-tighter">Valoración:</h5>
             </header>
-            <div>
+            <div class="dark:text-white">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id mollitia ut aliquid 
             </div>
             <div class=" text-yellow-400 float-right">
@@ -483,38 +484,182 @@
         </div>
       </article>
     </section>
-    <section>
+    <!-- Soundtrack -->
+    <section class="h-auto">
       <header>
-        <h3>Audios</h3>
+        <h3 class="titleStyle3">Soundtrack</h3>
       </header>
-      <ul class="flexContainerCol w-full items-center justify-center">
-        <li class="h-16 w-16 bg-red-200 rounded-full hover:w-72 origin-right duration-200 self-start overflow-hidden p-2">
-          <div class=" relative before:absolute before:h-12 before:content-['star'] before:text-center before:text-amber-300 before:float-right  before:rounded-50%  before:z-1">
-            <audio class="w-12 h-12 hover:w-full float-right duration-300  " controls src="/src/aseets/La-mujer-de-nieve .mp3">
-              No se reconoce el audio
-            </audio>
+      <ul class="flexContainerCol p-0 w-3/4 mx-auto  items-center justify-evenly gap-16 sm:flex-row sm:gap-30 max-xxs:items-center">
+        <!-- music n°1 -->
+        <li class="containerMusic shadowMix self-start max-xxs:self-center">
+          <div class="transformCenter musicLogo bg-orange-100 ">
+            <svg class="h-10 w-10 text-yellow-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="6" cy="17" r="3" />  <circle cx="16" cy="17" r="3" />  <polyline points="9 17 9 4 19 4 19 17" />  <line x1="9" y1="8" x2="19" y2="8" /></svg>
           </div>
-            <span class="p-2 float-left">
-              music n° 1
-            </span>
+          <!-- music section -->
+          <div class="w-full h-full flexContainerRow hover:rotate max-xxs:p-0">
+            <!-- section 1 -->
+            <div class=" sectionMusic bg-red-100/60">
+              <div class=" nameMusic animate-shadowMove transformCenter text-slate-600">
+                Fire Youngman
+              </div>
+            </div>
+            <!-- section 2 -->
+            <div class="sectionMusic bg-black">
+              <div class="absolute -rotate-45 flex items-end h-2/4 gap-1 w-full">
+                <span class="bar2  w-2 h-1 bg-white"></span>
+                <span class="bar1 w-1 h-1 bg-white"></span>
+                <span class="bar3  w-2 h-1 bg-white"></span>
+                <span class="bar1 w-1 h-1 bg-white"></span>
+                <span class="bar2  w-2 h-1 bg-white"></span>
+                <span class="bar3  w-1 h-1 bg-white"></span>
+                <span class="bar2  w-2 h-1 bg-white"></span>
+              </div>
+              <audio controls id="myAudio" class="hidden">
+                <source src="/src/aseets/audio/fireYoungman.mp3" type="audio/mp3">
+                Tu navegador no admite audio HTML5.
+              </audio>
+            </div>
+            <!-- section 3 -->
+            <div class="sectionMusic p-2 bg-gray-500 hover:opacity-90">
+              <img loading="lazy" class="-rotate-45 rounded-50%" src="https://www.dropbox.com/s/f13fg5whv5fr36z/portada2.jpg?raw=1" alt="portada de acecombat">
+              <button id="playMusic" class="btnMusicPlay">
+                &#9654;
+              </button>
+            </div>
+            <!-- section 4 -->
+            <div class="sectionMusic">
+              <div class="absolute textStyleNamco text-sm -rotate-45 transformCenter bg-slate-200 px-5 py-1 rounded-md hover:scale-110 duration-300 max-xxs:p-1">
+                namco
+              </div>
+            </div>
+          </div>
         </li>
-        <li class="h-16 w-16 bg-orange-200 rounded-full hover:w-60 origin-right duration-200 self-end">
-          <audio src=""></audio>
+        <!-- music n°2 -->
+        <li class="containerMusic shadowMix self-end max-xxs:self-center">
+          <div class="transformCenter musicLogo bg-orange-100 ">
+            <svg class="h-10 w-10 text-yellow-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="6" cy="17" r="3" />  <circle cx="16" cy="17" r="3" />  <polyline points="9 17 9 4 19 4 19 17" />  <line x1="9" y1="8" x2="19" y2="8" /></svg>
+          </div>
+          <!-- music section -->
+          <div class="w-full h-full flexContainerRow hover:rotate max-xxs:p-0">
+            <!-- section 1 -->
+            <div class=" sectionMusic bg-red-100/60">
+              <div class=" nameMusic animate-shadowMove transformCenter text-slate-600">
+                Fire Youngman
+              </div>
+            </div>
+            <!-- section 2 -->
+            <div class="sectionMusic bg-black">
+              <div class="absolute -rotate-45 flex items-end h-2/4 gap-1 w-full">
+                <span class="animate-musicBar2 w-2 h-1 bg-white"></span>
+                <span class="animate-musicBar w-1 h-1 bg-white"></span>
+                <span class="animate-musicBar3 w-2 h-1 bg-white"></span>
+                <span class="animate-musicBar w-1 h-1 bg-white"></span>
+                <span class="animate-musicBar2 w-2 h-1 bg-white"></span>
+                <span class="animate-musicBar3 w-1 h-1 bg-white"></span>
+                <span class="animate-musicBar2 w-2 h-1 bg-white"></span>
+              </div>
+            </div>
+            <!-- section 3 -->
+            <div class="sectionMusic p-2 bg-gray-500 hover:opacity-90">
+              <img loading="lazy" class="-rotate-45 rounded-50%" src="https://www.dropbox.com/s/f13fg5whv5fr36z/portada2.jpg?raw=1" alt="portada de acecombat">
+              <button id="playMusic" class="btnMusicPlay">
+                &#9654;
+              </button>
+            </div>
+            <!-- section 4 -->
+            <div class="sectionMusic">
+              <div class="absolute textStyleNamco text-sm -rotate-45 transformCenter bg-slate-200 px-5 py-1 rounded-md hover:scale-110 duration-300 max-xxs:p-1">
+                namco
+              </div>
+            </div>
+          </div>
         </li>
-        <li class="h-16 w-16 bg-yellow-200 rounded-full hover:w-60 origin-right duration-200 self-start">
-          <audio >
-            pista 1
-          </audio>
+        <!-- music n°3 -->
+        <li class="containerMusic shadowMix self-start max-xxs:self-center">
+          <div class="transformCenter musicLogo bg-orange-100 ">
+            <svg class="h-10 w-10 text-yellow-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="6" cy="17" r="3" />  <circle cx="16" cy="17" r="3" />  <polyline points="9 17 9 4 19 4 19 17" />  <line x1="9" y1="8" x2="19" y2="8" /></svg>
+          </div>
+          <!-- music section -->
+          <div class="w-full h-full flexContainerRow hover:rotate max-xxs:p-0">
+            <!-- section 1 -->
+            <div class=" sectionMusic bg-red-100/60">
+              <div class=" nameMusic animate-shadowMove transformCenter text-slate-600">
+                Fire Youngman
+              </div>
+            </div>
+            <!-- section 2 -->
+            <div class="sectionMusic bg-black">
+              <div class="absolute -rotate-45 flex items-end h-2/4 gap-1 w-full">
+                <span class="animate-musicBar2 w-2 h-1 bg-white"></span>
+                <span class="animate-musicBar w-1 h-1 bg-white"></span>
+                <span class="animate-musicBar3 w-2 h-1 bg-white"></span>
+                <span class="animate-musicBar w-1 h-1 bg-white"></span>
+                <span class="animate-musicBar2 w-2 h-1 bg-white"></span>
+                <span class="animate-musicBar3 w-1 h-1 bg-white"></span>
+                <span class="animate-musicBar2 w-2 h-1 bg-white"></span>
+              </div>
+            </div>
+            <!-- section 3 -->
+            <div class="sectionMusic p-2 bg-gray-500 hover:opacity-90">
+              <img loading="lazy" class="-rotate-45 rounded-50%" src="https://www.dropbox.com/s/f13fg5whv5fr36z/portada2.jpg?raw=1" alt="portada de acecombat">
+              <button id="playMusic" class="btnMusicPlay">
+                &#9654;
+              </button>
+            </div>
+            <!-- section 4 -->
+            <div class="sectionMusic">
+              <div class="absolute textStyleNamco text-sm -rotate-45 transformCenter bg-slate-200 px-5 py-1 rounded-md hover:scale-110 duration-300 max-xxs:p-1">
+                namco
+              </div>
+            </div>
+          </div>
         </li>
-        <li class="h-16 w-16 bg-orange-200 rounded-full hover:w-60 origin-right duration-200 self-end">
-          <audio src=""></audio>
+        <!-- music n°4 -->
+        <li class="containerMusic shadowMix self-end max-xxs:self-center">
+          <div class="transformCenter musicLogo bg-orange-100 ">
+            <svg class="h-10 w-10 text-yellow-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="6" cy="17" r="3" />  <circle cx="16" cy="17" r="3" />  <polyline points="9 17 9 4 19 4 19 17" />  <line x1="9" y1="8" x2="19" y2="8" /></svg>
+          </div>
+          <!-- music section -->
+          <div class="w-full h-full flexContainerRow hover:rotate max-xxs:p-0">
+            <!-- section 1 -->
+            <div class=" sectionMusic bg-red-100/60">
+              <div class=" nameMusic animate-shadowMove transformCenter text-slate-600">
+                Fire Youngman
+              </div>
+            </div>
+            <!-- section 2 -->
+            <div class="sectionMusic bg-black">
+              <div class="absolute -rotate-45 flex items-end h-2/4 gap-1 w-full">
+                <span class="animate-musicBar2 w-2 h-1 bg-white"></span>
+                <span class="animate-musicBar w-1 h-1 bg-white"></span>
+                <span class="animate-musicBar3 w-2 h-1 bg-white"></span>
+                <span class="animate-musicBar w-1 h-1 bg-white"></span>
+                <span class="animate-musicBar2 w-2 h-1 bg-white"></span>
+                <span class="animate-musicBar3 w-1 h-1 bg-white"></span>
+                <span class="animate-musicBar2 w-2 h-1 bg-white max-xxs:hidden"></span>
+              </div>
+            </div>
+            <!-- section 3 -->
+            <div class="sectionMusic p-2 bg-gray-500 hover:opacity-90">
+              <img loading="lazy" class="-rotate-45 rounded-50%" src="https://www.dropbox.com/s/f13fg5whv5fr36z/portada2.jpg?raw=1" alt="portada de acecombat">
+              <button id="playMusic" class="btnMusicPlay">
+                &#9654;
+              </button>
+            </div>
+            <!-- section 4 -->
+            <div class="sectionMusic">
+              <div class="absolute textStyleNamco text-sm -rotate-45 transformCenter bg-slate-200 px-5 py-1 rounded-md hover:scale-110 duration-300 max-xxs:p-1">
+                namco
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
     </section>
     <!-- Screen game -->
-    <section class="overflow-hidden bg-yellow-700/70 py-8 flexContainerRow justify-around items-center gap-8 md:gap-13 lg:gap-24">
+    <section class="overflow-hidden bg-yellow-700/70 my-60 py-8 flexContainerRow justify-around items-center gap-8 md:gap-13 lg:gap-24 dark:bg-zinc-700">
       <header class="w-full">
-        <h3>Game capture</h3>
+        <h3 class="titleStyle3">Game capture</h3>
       </header>
       <!-- Photo N°1 -->
       <figure class="relative z-3">

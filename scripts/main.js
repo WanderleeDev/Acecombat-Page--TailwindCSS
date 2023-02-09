@@ -20,11 +20,19 @@ const ladoB = document.querySelectorAll('.cardSideB');
 //games pictures
 const photo = document.querySelectorAll('.photoStyle');
 const figcaptionPhoto = document.querySelectorAll('.figcaptionStyle');
+//music 
+const myAudio = document.getElementById('myAudio');
+const lineBar1 = document.querySelectorAll('.bar1') ;
+const lineBar2 = document.querySelectorAll('.bar2') ;
+const lineBar3 = document.querySelectorAll('.bar3') ;
+let musicOn = false;
 //Slaider aircraft
 
 // función agregar dark mode
 darkContainer.addEventListener("click",function(){
+  //darkContainer.classList.remove("text-amber-300");
   darkContainer.classList.toggle("bg-sky-700");
+  //darkContainer.classList.add("text-gray-700");
   btnDark.classList.toggle("rotate-180");
   tagHtml.classList.toggle("dark");
 });
@@ -86,3 +94,40 @@ for (let i = 0; i < photo.length; i++) {
     photo[i].classList.add('animate-caer');
   });
 }
+
+
+playMusic.addEventListener("click", function() {
+  if (!musicOn) {
+    //reproduce la música
+    myAudio.play();
+    musicOn = true;
+    //cambia el logo del botón
+    playMusic.innerHTML = "&#9208;";
+    //Pone a funcionar la animación de barras agregando la clase correspondiente
+    for (let i = 0; i < lineBar1.length; i++) {
+      lineBar1[i].classList.add('animate-musicBar');
+    }
+    for (let x = 0; x < lineBar2.length; x++) {
+      lineBar2[x].classList.add('animate-musicBar2');
+    }
+    for (let y = 0; y < lineBar3.length; y++) {
+      lineBar3[y].classList.add('animate-musicBar3');
+    }
+  } else {
+    //detiene la música
+    myAudio.pause();
+    musicOn = false;
+    //cambia el logo del botón
+    playMusic.innerHTML = "&#9654;";
+    //Detiene la animación de barras removiendo la clase correspondiente
+    for (let i = 0; i < lineBar1.length; i++) {
+      lineBar1[i].classList.remove('animate-musicBar');
+    }
+    for (let x = 0; x < lineBar2.length; x++) {
+      lineBar2[x].classList.remove('animate-musicBar2');
+    }
+    for (let y = 0; y < lineBar3.length; y++) {
+      lineBar3[y].classList.remove('animate-musicBar3');
+    }
+  }
+});

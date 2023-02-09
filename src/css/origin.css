@@ -18,13 +18,13 @@ img {
 @tailwind components;
 /* Se agrupan varias utilidades en un clase para poder comprimir código creando asi componentes */
 .titleStyle1{
-  @apply text-4xl font-bold tracking-wider hidden
+  @apply text-4xl font-bold tracking-wider hidden dark:text-white
 }
 .titleStyle2{
-  @apply text-cyan-400 text-2xl mx-4 border-b-2 sm:text-4xl
+  @apply text-gray-500 text-2xl mx-4 sm:text-4xl dark:text-sky-500 relative before:absolute before:h-1 before:w-9 before:bg-red-500 before:-top-2
 }
 .titleStyle3{
-  @apply text-red-300 sm:text-xl border-l-4 border-cyan-400 p-2
+  @apply text-red-300 sm:text-xl border-cyan-400 p-2 dark:text-slate-200 
 }
 .titleStyle4{
   @apply border-b-2 border-sky-300 border-dotted pt-4 my-4 text-sky-300 text-lg
@@ -105,19 +105,38 @@ img {
   @apply z-1 absolute left-2 bottom-2 bg-white rounded-xl p-1 animate-pulse border-1
 }
 .photoStyle{
-  @apply w-40 bg-gradient-to-b from-gray-300  to-gray-100 py-1 px-2 duration-1000 
+  @apply w-40 bg-gradient-to-b from-gray-300  to-gray-100 py-1 px-2 duration-1000
 }
 .beforePhoto{
   @apply before:absolute before:w-full before:bg-gray-300 before:-top-6 before:left-0 before:h-16 before:-z-1
 }
 .afterPhoto{
-  @apply after:absolute after:w-2 after:h-2 after:-top-4 after:left-2/4 after:-translate-x-2/4 after:bg-gray-400 after:rounded-50% 
+  @apply after:absolute after:w-2 after:h-2 after:-top-4 after:left-2/4 after:-translate-x-2/4 after:bg-gray-600 after:rounded-50% 
 }
 .figcaptionStyle{
-  @apply absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 bg-white text-center rotate-45 -z-1 hover:text-white duration-300
+  @apply  bg-white text-center rotate-45 -z-1 hover:text-white duration-300
 }
 .btnSlaider{
   @apply w-4 h-14 bg-slate-500 text-slate-50 hover:bg-slate-100  hover:text-slate-500 focus:text-slate-500 focus:bg-slate-100 hover:scale-105 duration-200
+}
+.transformCenter{
+  @apply absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4
+}
+.containerMusic{
+  @apply relative w-14 h-14  bg-slate-200 rounded-50% overflow-hidden duration-500 w-60 h-60 hover:overflow-ellipsis hover:rounded-none hover:rotate-45
+  max-xxs:w-40 max-xxs:h-40
+}
+.musicLogo{
+  @apply z-1 rounded-50% p-2 cursor-pointer
+}
+.nameMusic{
+  @apply -rotate-45 text-center tracking-widest w-full max-xxs:text-xs
+}
+.sectionMusic{
+  @apply relative w-2/4 h-2/4 rounded-xl border-4 border-slate-200
+}
+.btnMusicPlay{
+  @apply absolute opacity-0 inset-2 -rotate-45 bg-slate-400/50 rounded-50% text-red-600 hover:opacity-100 hover:scale-105 duration-200
 }
 
 
@@ -178,6 +197,9 @@ img {
   0vw -35vh 3px 2px var(--clr)
   ;
 }
-.shadowYellow{
+.shadowCurrent{
   box-shadow: 0 0 0.4rem 0.025rem currentColor;
+}
+.textShadow{
+  text-shadow: 1px 1px 2px black;
 }
