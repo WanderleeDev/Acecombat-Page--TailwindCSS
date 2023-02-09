@@ -21,6 +21,7 @@ const ladoB = document.querySelectorAll('.cardSideB');
 const photo = document.querySelectorAll('.photoStyle');
 const figcaptionPhoto = document.querySelectorAll('.figcaptionStyle');
 //music 
+const playMusic = document.getElementById('playMusic');
 const myAudio = document.getElementById('myAudio');
 const lineBar1 = document.querySelectorAll('.bar1') ;
 const lineBar2 = document.querySelectorAll('.bar2') ;
