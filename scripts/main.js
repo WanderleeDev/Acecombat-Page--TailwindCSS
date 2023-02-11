@@ -20,6 +20,7 @@ const ladoB = document.querySelectorAll('.cardSideB');
 //games pictures
 const photo = document.querySelectorAll('.photoStyle');
 const figcaptionPhoto = document.querySelectorAll('.figcaptionStyle');
+const rotateValue = [1, 2, 3, 5, 6, 10, 12, 15, 25, 30];
 //music 
 const playMusic = document.getElementById('playMusic');
 const myAudio = document.getElementById('myAudio');
@@ -27,8 +28,9 @@ const lineBar1 = document.querySelectorAll('.bar1') ;
 const lineBar2 = document.querySelectorAll('.bar2') ;
 const lineBar3 = document.querySelectorAll('.bar3') ;
 let musicOn = false;
-//Slaider aircraft
-
+//btn details
+const detailsBox = document.querySelectorAll('.detailsStyle');
+const btnDetails = document.querySelectorAll('.btnDetails');
 // función agregar dark mode
 darkContainer.addEventListener("click",function(){
   //darkContainer.classList.remove("text-amber-300");
@@ -79,6 +81,22 @@ function mostarCardB(parametro, objetivo1) {
   parametro.addEventListener("click",function () {
     objetivo1.classList.toggle('translate-x-full');
   });
+}
+
+//funcion para transformar btn
+function changeBtn() {
+  for (const btn of btnDetails) {
+    btn.addEventListener("click", function () {
+      console.log("targe");
+      btn.classList.add('rounded-50%','w-20','p-0','h-20','duration-500');
+      btn.innerHTML = '<svg class="h-8 w-8 text-teal-500 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />  <polyline points="22 4 12 14.01 9 11.01" /></svg>';
+    });
+  }
+}
+
+//funcion para agrregar un evento (Alternar sombras)
+function toggleShadow(target,propiedad) {
+  target.classList.toggle(propiedad);
 }
 
 //efecto hover en card de valoración
@@ -133,16 +151,15 @@ playMusic.addEventListener("click", function() {
   }
 });
 
-const btnDetails = document.querySelectorAll('.btnDetails');
-
-//funcion para transformar btn
-function changeBtn() {
-  for (const btn of btnDetails) {
-    btn.addEventListener("click", function () {
-      console.log("targe");
-      btn.classList.add('rounded-50%','w-20','p-0','h-20','duration-500');
-      btn.innerHTML = '<svg class="h-8 w-8 text-teal-500 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />  <polyline points="22 4 12 14.01 9 11.01" /></svg>';
-    });
-  }
-}
+//Transformar btn al darle click
 changeBtn();
+
+//Dar sombraas al elemento al pasar el mouse y quitarlo al retirar el mouse
+for (let i = 0; i < detailsBox.length; i++) {
+  detailsBox[i].addEventListener("mouseenter",function () {
+    toggleShadow(detailsBox[i],'shadowCurrent2');
+  });
+  detailsBox[i].addEventListener("mouseleave",function () {
+    toggleShadow(detailsBox[i],'shadowCurrent2');
+  });
+}

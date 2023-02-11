@@ -78,8 +78,12 @@ module.exports = {
       },
 
       skew:{
+        '5': '5deg',
+        '10': '10deg',
+        '15': '15deg',
         '20': '20deg',
         '30': '30deg',
+        '35': '35deg',
         '40': '40deg',
         '50': '50deg',
         '60': '60deg',
@@ -90,6 +94,16 @@ module.exports = {
         '120': '120deg',
         '130': '130deg',
         '140': '140deg',
+      },
+
+      rotate:{
+        '5': '5deg',
+        '10': '10deg',
+        '15': '15deg',
+        '25': '25deg',
+        '30': '30deg',
+        '35': '35deg',
+        '40': '40deg',
       },
 
       //nuevos animaciones creadas
