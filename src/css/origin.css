@@ -123,7 +123,7 @@ img {
   @apply absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4
 }
 .containerMusic{
-  @apply relative w-14 h-14  bg-slate-200 rounded-50% overflow-hidden duration-500 w-60 h-60 hover:overflow-ellipsis hover:rounded-none hover:rotate-45
+  @apply relative bg-slate-200 rounded-50% overflow-hidden duration-500 w-60 h-60 hover:overflow-ellipsis hover:rounded-none hover:rotate-45
   max-xxs:w-40 max-xxs:h-40
 }
 .musicLogo{
@@ -137,6 +137,15 @@ img {
 }
 .btnMusicPlay{
   @apply absolute opacity-0 inset-2 -rotate-45 bg-slate-400/50 rounded-50% text-red-600 hover:opacity-100 hover:scale-105 duration-200
+}
+.cardImg{
+  @apply w-80 h-52 border-4 border-slate-200 object-cover
+}
+.sumaryStyle{
+  @apply font-Orbitron text-lg cursor-pointer tracking-widest
+}
+.detailsStyle{
+  @apply p-4 hover:scale-95 duration-200 w-3/4 sm:p-8
 }
 
 
@@ -159,7 +168,7 @@ img {
   display: block;
 }
 .widthCalc{
-  width: calc(100% /24);
+  width: 100%;
 }
 .trasnladarse{
   transform: translateX(-4.16%);
@@ -202,4 +211,7 @@ img {
 }
 .textShadow{
   text-shadow: 1px 1px 2px black;
+}
+.maxContend{
+  width: max-content;
 }

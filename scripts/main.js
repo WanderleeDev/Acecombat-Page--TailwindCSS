@@ -132,3 +132,17 @@ playMusic.addEventListener("click", function() {
     }
   }
 });
+
+const btnDetails = document.querySelectorAll('.btnDetails');
+
+//funcion para transformar btn
+function changeBtn() {
+  for (const btn of btnDetails) {
+    btn.addEventListener("click", function () {
+      console.log("targe");
+      btn.classList.add('rounded-50%','w-20','p-0','h-20','duration-500');
+      btn.innerHTML = '<svg class="h-8 w-8 text-teal-500 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />  <polyline points="22 4 12 14.01 9 11.01" /></svg>';
+    });
+  }
+}
+changeBtn();
