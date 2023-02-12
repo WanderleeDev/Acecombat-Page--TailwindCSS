@@ -1,11 +1,14 @@
 //btn dark mode
-const btnDark = document.getElementById('btnDarkMode');
-const darkContainer = document.getElementById('darkButtonContainer');
+const btnDark = document.querySelectorAll('.darkModeBtn');
+const darkContainer = document.querySelectorAll('.containerBtnDark');
 const rotar = document.getElementById('rotateImg');
 const tagHtml = document.querySelector('html');
 //btn mobile
 const btnMobile = document.getElementById('btnMobile');
 const menuMobile = document.getElementById('mobile');
+//btn login
+const userBtn = document.querySelectorAll('.userBtn');
+const loginWindow = document.getElementById('loginWindow');
 //card disc
 const btnCardDisc = document.querySelectorAll('.btnCardDisc');
 const cardDisc = document.querySelectorAll('.cardDisc');
@@ -29,14 +32,13 @@ const imageDetails = document.querySelectorAll('.boxHidden');
 const box = document.querySelectorAll('#box');
 
 // función agregar dark mode
-darkContainer.addEventListener("click",function(){
-  //darkContainer.classList.remove("text-amber-300");
-  darkContainer.classList.toggle("bg-sky-700");
-  //darkContainer.classList.add("text-gray-700");
-  btnDark.classList.toggle("rotate-180");
-  tagHtml.classList.toggle("dark");
-});
-
+for (let i = 0; i < darkContainer.length; i++) {
+  darkContainer[i].addEventListener("click",function () {
+    darkContainer[i].classList.toggle("bg-sky-700");
+    btnDark[i].classList.toggle("rotate-180");
+    tagHtml.classList.toggle("dark");  
+  }); 
+}
 
 //funcion para mostrar la barra mobile
 btnMobile.addEventListener("click", function () {
@@ -89,6 +91,13 @@ function toggleShadow(target,propiedad) {
   target.classList.toggle(propiedad);
 }
 
+//desplegar ventana de login
+for (let i = 0; i < userBtn.length; i++) {
+  userBtn[i].addEventListener("click", function () {
+    loginWindow.style.display = (loginWindow.style.display === 'block') ? 'none': 'block';
+  });
+}
+
 //efecto hover en card de valoración
 for (let i = 0; i < card.length; i++) {
   girarCard(card[i], ladoA[i], ladoB[i]);
@@ -121,7 +130,6 @@ for (let i = 0; i < detailsBox.length; i++) {
     detailsBox[i].classList.remove("shadowCurrent2");
   });
 }
-
 
 //Dar sombras al elemento al pasar el mouse y quitarlo al retirar el mouse
 for (let i = 0; i < cardDisc.length; i++) {

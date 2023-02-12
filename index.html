@@ -36,21 +36,19 @@
             <li>
               <ul class="flexContainerRow gap-4 bg-slate-100 shadowMix rounded-3xl dark:bg-slate-400">
                 <li>
-                  <a href="#">
+                  <a href="#search">
                     <svg class="navbarIcon text-red-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="10" cy="10" r="7" />  <line x1="21" y1="21" x2="15" y2="15" />
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="userBtn">
                     <svg class="navbarIcon text-red-500"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                     </svg>  
-                  </a>
                 </li>
                 <!-- btn dark mode -->
-                <li id="darkButtonContainer" class= "containerBtnDark shadowCurrent text-amber-300">
-                  <button id="btnDarkMode" class="darkModeBtn">
+                <li class= "containerBtnDark shadowCurrent text-amber-300">
+                  <button class="darkModeBtn">
                     <svg class="h-8 w-full text-yellow-400 dark:text-amber-400"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="4" />  <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7" />
                     </svg>
                     <svg class="h-8 w-full text-yellow-400 rotate-90"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -101,38 +99,46 @@
                 <span>Info</span>
               </a>
             </li>
-            <li class="beforeUnderline mx-4">
+            <li class="userBtn beforeUnderline mx-4">
               <a class="inline-flex gap-4 items-center"  aria-label="Ir a inicio de sesión" href="#">
                 <svg class="navbarIcon text-red-500/70"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                 </svg>     
-                <span class="userBtn">User</span>       
+                <span>User</span>       
               </a>
+            </li>
+            <li class= "containerBtnDark shadowCurrent text-amber-300 sm:mx-auto">
+              <button class="darkModeBtn">
+                <svg class="h-8 w-full text-yellow-400 dark:text-amber-400"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="4" />  <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7" />
+                </svg>
+                <svg class="h-8 w-full text-yellow-400 rotate-90"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                </svg>
+              </button>
             </li>
           </ul>
         </li>
       </ul>
       <!-- Ventana de ingreso -->
-      <div class="absolute bg-white z-5 transformCenter h-100vh p-8">
-        <svg class="h-8 w-8 text-red-500"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div id="loginWindow" class="hidden fixed bg-slate-100 border-slate-400 border-1 z-10 p-2 sm:p-10 left-2/4 -translate-x-2/4 top-28 w-11/12 sm:w-3/4 max-w-max shadowMix md:left-3/4">
+        <svg class="h-10 w-10 text-slate-400 mx-auto"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
         </svg>        
         <div>
-          <p>Ingresa con tu red favorita</p>
-          <div class="flexContainerRow gap-4 items-center cursor-pointer ">
-            <img class="w-10" loading="lazy" src="https://www.dropbox.com/s/c58ix764axpeu19/google.png?raw=1" alt="logo google">
-            <p class="font-semibold">Usar cuenta de Gmail</p>
+          <p class="text-center mb-4">Ingresa con tu red favorita</p>
+          <div class="flexContainerRow gap-4 items-center cursor-pointer hover:bg-white rounded-lg">
+            <img class="w-5 sm:w-10" loading="lazy" src="https://www.dropbox.com/s/c58ix764axpeu19/google.png?raw=1" alt="logo google">
+            <p class="text-xs sm:font-semibold">Usar cuenta de Gmail</p>
           </div>
-          <div class="flexContainerRow gap-4 items-center cursor-pointer ">
-            <img class="w-10" loading="lazy" src="https://www.dropbox.com/s/cwkeq6cvwcrrdmr/facebook.png?raw=1" alt="logo facebook">
-            <p class="font-semibold">Usar cuenta de facebook</p>
+          <div class="flexContainerRow gap-4 items-center cursor-pointer hover:bg-white rounded-lg">
+            <img class="w-5 sm:w-10" loading="lazy" src="https://www.dropbox.com/s/cwkeq6cvwcrrdmr/facebook.png?raw=1" alt="logo facebook">
+            <p class="text-xs sm:font-semibold">Usar cuenta de facebook</p>
           </div>
-          <div class="flexContainerRow gap-4 items-center cursor-pointer ">
-            <img class="w-10" loading="lazy" src="https://www.dropbox.com/s/2v4osqi9ee5jqeu/pngegg.png?raw=1" alt="logo acecombat">
-            <p class="font-semibold">Usar tu ID de usuario</p>
+          <div class="flexContainerRow gap-4 items-center cursor-pointer hover:bg-white rounded-lg">
+            <img class="w-5 sm:w-10" loading="lazy" src="https://www.dropbox.com/s/2v4osqi9ee5jqeu/pngegg.png?raw=1" alt="logo acecombat">
+            <p class="text-xs sm:font-semibold">Usar tu ID de usuario</p>
           </div>
         </div>
-
       </div>
     </nav>
   </header>
