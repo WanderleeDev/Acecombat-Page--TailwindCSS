@@ -4,7 +4,7 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: ["./public/*.{html,js}","./src/js/main.js"],
   theme: {
-    //darkMode: 'class',
+    darkMode: 'class',
     extend: {
       //aqui se extienden o agregaran las propiedades, se especifica la propiedad en este caso font = fontfamily, luego ponemos un nombre y su valor.
       fontFamily:{

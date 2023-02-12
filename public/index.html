@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark:bg-zinc-700">
+<html lang="en" class="scroll-smooth dark">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,19 +13,19 @@
   <title>AceCombat</title>
   <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
-<body>
+<body class="dark:bg-zinc-700">
   <header>
     <nav class="relative">
       <ul>
         <!-- Barra de navegación Desktop -->
-        <li class="fixed top-0 left-0 right-0 z-5 hidden md:block">
+        <li class="fixed top-0 left-0 right-0 z-5 hidden md:block bg-gradient-to-b from-sky-700 to-sky-500 dark:bg-gradient-to-b dark:from-sky-900 dark:to-sky-700">
           <ul class="flexContainerRow justify-evenly items-center bg-transparent text-sm text- font-bold tracking-wider">
             <li>
               <a href="/public/index.html">
-                <img class="w-16" src="https://www.dropbox.com/s/2v4osqi9ee5jqeu/pngegg.png?raw=1" alt="Acecombat logo">
+                <img class="w-16 z-5" src="https://www.dropbox.com/s/2v4osqi9ee5jqeu/pngegg.png?raw=1" alt="Acecombat logo">
               </a>
             </li>
-            <li class="">
+            <li>
               <ul class="flexContainerRow gap-8 text-white">
                 <li class="beforeUnderline"><a href="#home">Home</a></li>
                 <li class="beforeUnderline"><a href="#ediciones">Ediciones</a></li>
@@ -147,14 +147,14 @@
         <!-- card 1 -->
         <div class="cardDisc shadowMix">
           <!-- lado  A -->
-          <figure class="translate cardDiscSideA  bg-gradient-to-tr from-red-200 via-gray-200 to-pink-200">
+          <figure class="translate cardDiscSideA bg-gradient-to-tr from-red-200 via-gray-200 to-pink-200">
             <img loading="lazy" class=" relative animate-rotateY duration-500" src="https://www.dropbox.com/s/90lbq6vzsq7qlb7/imageonline-co-transparentimage.jpg?raw=1" alt="Cd rom acecombat">
-            <figcaption class="absolute left-0 top-0 "> Disc N° 1</figcaption>
+            <figcaption class="cardDescription"> Disc N° 1</figcaption>
           </figure>
           <!-- lado B -->
           <figure class="cardDiscSideB translate-x-full">
             <img loading="lazy" src="https://www.dropbox.com/s/f13fg5whv5fr36z/portada2.jpg?raw=1" alt="portada 1 de acecomabat">
-            <figcaption></figcaption>
+            <figcaption class="gameCover">Portada N°1</figcaption>
           </figure>
           <button class="btnCardDisc z-5 border-red-500" aria-label="Ver la portada del juego versión 1">
             <svg class="h-4 w-4 text-red-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M10 12h-7l3 -3m0 6l-3 -3" />  <path d="M14 12h7l-3 -3m0 6l3 -3" />  <path d="M3 6v-3h18v3" />  <path d="M3 18v3h18v-3" /></svg>
@@ -165,12 +165,12 @@
           <!-- lado  A -->
           <figure class="cardDiscSideA bg-gradient-to-tr from-gray-200  to-green-100">
             <img loading="lazy" class="animate-rotateY duration-500" src="https://www.dropbox.com/s/k4jzpyhjo2uozi8/disc-green-removebg-preview.png?raw=1" alt="Cd rom acecombat">
-            <figcaption></figcaption>
+            <figcaption class="cardDescription">Disc N°2</figcaption>
           </figure>
           <!-- lado  B -->
           <figure class="cardDiscSideB translate-x-full">
             <img loading="lazy" src="https://www.dropbox.com/s/uqzrvwq7lqoa5w6/portada3.png?raw=1" alt="portada 1 de acecomabat">
-            <figcaption></figcaption>
+            <figcaption class="gameCover">Portada N°2</figcaption>
           </figure>
           <button class="btnCardDisc border-green-700" aria-label="Ver la portada del juego versión 2">
             <svg class="h-4 w-4 text-green-700"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M10 12h-7l3 -3m0 6l-3 -3" />  <path d="M14 12h7l-3 -3m0 6l3 -3" />  <path d="M3 6v-3h18v3" />  <path d="M3 18v3h18v-3" /></svg>
@@ -181,12 +181,12 @@
           <!-- lado  A -->
           <figure class="cardDiscSideA  bg-gradient-to-tr from-red-200 via-purple-100 to-gray-200 ">
             <img loading="lazy" class="animate-rotateY duration-500" src="https://www.dropbox.com/s/yuqfxliybsdbtrk/disc-blueL%20.png?raw=1" alt="Cd rom acecombat">
-            <figcaption></figcaption>
+            <figcaption class="cardDescription">Disc N°3</figcaption>
           </figure>
           <!-- lado  B -->
           <figure class="cardDiscSideB translate-x-full">
             <img loading="lazy" src="https://www.dropbox.com/s/sksbnbhpb18lyum/portada.png?raw=1" alt="portada 1 de acecomabat">
-            <figcaption></figcaption>
+            <figcaption class="gameCover">Portada N°3</figcaption>
           </figure>
           <button class="btnCardDisc border-purple-500" aria-label="Ver la portada del juego versión 1">
             <svg class="h-4 w-4 text-purple-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M10 12h-7l3 -3m0 6l-3 -3" />  <path d="M14 12h7l-3 -3m0 6l3 -3" />  <path d="M3 6v-3h18v3" />  <path d="M3 18v3h18v-3" /></svg>
@@ -232,7 +232,7 @@
       <!-- Video -->
       <div class="lg:col-span-2 lg:row-span-2 md:my-auto md:col-span-2 md:row-span-2 xl:px-20">
         <div class="h-80 max-xxs:h-auto">
-          <video class="w-full h-full sm:w-5/6 sm:mx-auto" poster="https://www.dropbox.com/s/lib3k6nmidk86n0/acecombat-screen.png?raw=1" controls>
+          <video class="w-full h-full sm:w-5/6 sm:mx-auto object-fill" poster="https://www.dropbox.com/s/lib3k6nmidk86n0/acecombat-screen.png?raw=1" controls>
             <source src="https://www.dropbox.com/s/mj0n3dobluq4sdi/introGame.mp4?raw=1" type="video/mp4">
             <img loading="lazy" src="https://www.dropbox.com/s/llfty3xusf7s3q6/logo-black%20%281%29.png?raw=1" alt="Video no encontrado">
             Su navegador no soporta este formato de video
@@ -343,17 +343,16 @@
           </article>
         </div>
       </section>    
-      <!-- Slaider -->
       <article class=" relative lg:col-span-4 md:col-span-3 my-40 overflow-hidden  dark:bg-zinc-700">
         <header>
           <h3 class="titleStyle3">Aircraft</h3>
         </header>
-        <div class="flexContainerRow w-full gap-4 justify-center items-center lg:w-1/3 lg:flex-col lg:mx-auto">
+        <div class="flexContainerRow w-full gap-16 justify-center items-center lg:w-5/12 lg:flex-col lg:mx-auto xl:w-8/12">
           <details class="detailsStyle bg-red-50 text-red-400 border-2 border-red-400 self-start ">
             <summary class="sumaryStyle" >Detalles</summary>
             <p class="bg-red-300 text-white font-bold tracking-widest my-4 p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, atque sunt! Nemo error provident aliquam.
             </p>
-            <button class="btnDetails block mx-auto btn shadowMix bg-white my-4">click me</button>
+            <button class="btnDetails btn shadowMix ">click me</button>
           </details>
           <details class="detailsStyle bg-yellow-50 text-yellow-400 border-2 border-yellow-400 lg:place-self-end">
             <summary class="sumaryStyle" >Detalles</summary>
@@ -375,57 +374,6 @@
           </details>
         </div>
       </article>
-    </section>
-    <!-- Soundtrack -->
-    <section class="h-auto">
-      <header>
-        <h3 class="titleStyle3">Soundtrack</h3>
-      </header>
-      <ul class="flexContainerCol p-0 w-3/4 mx-auto  items-center justify-evenly gap-16 sm:flex-row sm:gap-30 max-xxs:items-center">
-        <li class="containerMusic shadowMix self-start max-xxs:self-center">
-          <div class="transformCenter musicLogo bg-orange-100 ">
-            <svg class="h-10 w-10 text-yellow-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="6" cy="17" r="3" />  <circle cx="16" cy="17" r="3" />  <polyline points="9 17 9 4 19 4 19 17" />  <line x1="9" y1="8" x2="19" y2="8" /></svg>
-          </div>
-          <!-- music section -->
-          <div class="w-full h-full flexContainerRow hover:rotate max-xxs:p-0">
-            <!-- section 1 -->
-            <div class=" sectionMusic bg-red-100/60">
-              <div class=" nameMusic animate-shadowMove transformCenter text-slate-600">
-                Fire Youngman
-              </div>
-            </div>
-            <!-- section 2 -->
-            <div class="sectionMusic bg-black">
-              <div class="absolute -rotate-45 flex items-end h-2/4 gap-1 w-full">
-                <span class="bar2  w-2 h-1 bg-white"></span>
-                <span class="bar1 w-1 h-1 bg-white"></span>
-                <span class="bar3  w-2 h-1 bg-white"></span>
-                <span class="bar1 w-1 h-1 bg-white"></span>
-                <span class="bar2  w-2 h-1 bg-white"></span>
-                <span class="bar3  w-1 h-1 bg-white"></span>
-                <span class="bar2  w-2 h-1 bg-white"></span>
-              </div>
-              <audio controls id="myAudio" class="hidden">
-                <source src="https://www.dropbox.com/s/4d7vjwginq4aiyh/fireYoungman.mp3?raw=1" type="audio/mp3">
-                Tu navegador no admite audio HTML5.
-              </audio>
-            </div>
-            <!-- section 3 -->
-            <div class="sectionMusic p-2 bg-gray-500 hover:opacity-90">
-              <img loading="lazy" class="-rotate-45 rounded-50%" src="https://www.dropbox.com/s/f13fg5whv5fr36z/portada2.jpg?raw=1" alt="portada de acecombat">
-              <button id="playMusic" class="btnMusicPlay">
-                &#9654;
-              </button>
-            </div>
-            <!-- section 4 -->
-            <div class="sectionMusic">
-              <div class="absolute textStyleNamco text-sm -rotate-45 transformCenter bg-slate-200 px-5 py-1 rounded-md hover:scale-110 duration-300 max-xxs:p-1">
-                namco
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
     </section>
     <!-- Screen game -->
     <section class="overflow-hidden bg-yellow-700/70 py-8 flexContainerRow justify-around items-center gap-8 md:gap-13 lg:gap-24 dark:bg-zinc-700">

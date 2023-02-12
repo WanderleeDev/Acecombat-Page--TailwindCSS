@@ -13,6 +13,8 @@ const btnCardDisc = document.querySelectorAll('.btnCardDisc');
 const cardDisc = document.querySelectorAll('.cardDisc');
 const cardDiscSideA = document.querySelectorAll('.cardDiscSideA');
 const cardDiscSideB = document.querySelectorAll('.cardDiscSideB');
+const cardDescription = document.querySelectorAll('.cardDescription');
+const gameCover = document.querySelectorAll('.gameCover');
 //card review
 const card = document.querySelectorAll('.cardReview');
 const ladoA = document.querySelectorAll('.cardSideA');
@@ -31,6 +33,7 @@ let musicOn = false;
 //btn details
 const detailsBox = document.querySelectorAll('.detailsStyle');
 const btnDetails = document.querySelectorAll('.btnDetails');
+
 // función agregar dark mode
 darkContainer.addEventListener("click",function(){
   //darkContainer.classList.remove("text-amber-300");
@@ -88,7 +91,8 @@ function changeBtn() {
   for (const btn of btnDetails) {
     btn.addEventListener("click", function () {
       console.log("targe");
-      btn.classList.add('rounded-50%','w-20','p-0','h-20','duration-500');
+      btn.classList.add('rounded-50%','w-20','h-20','duration-500');
+      btn.style.padding = "0px";
       btn.innerHTML = '<svg class="h-8 w-8 text-teal-500 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />  <polyline points="22 4 12 14.01 9 11.01" /></svg>';
     });
   }
@@ -114,52 +118,18 @@ for (let i = 0; i < photo.length; i++) {
   });
 }
 
-
-playMusic.addEventListener("click", function() {
-  if (!musicOn) {
-    //reproduce la música
-    myAudio.play();
-    musicOn = true;
-    //cambia el logo del botón
-    playMusic.innerHTML = "&#9208;";
-    //Pone a funcionar la animación de barras agregando la clase correspondiente
-    for (let i = 0; i < lineBar1.length; i++) {
-      lineBar1[i].classList.add('animate-musicBar');
-    }
-    for (let x = 0; x < lineBar2.length; x++) {
-      lineBar2[x].classList.add('animate-musicBar2');
-    }
-    for (let y = 0; y < lineBar3.length; y++) {
-      lineBar3[y].classList.add('animate-musicBar3');
-    }
-  } else {
-    //detiene la música
-    myAudio.pause();
-    musicOn = false;
-    //cambia el logo del botón
-    playMusic.innerHTML = "&#9654;";
-    //Detiene la animación de barras removiendo la clase correspondiente
-    for (let i = 0; i < lineBar1.length; i++) {
-      lineBar1[i].classList.remove('animate-musicBar');
-    }
-    for (let x = 0; x < lineBar2.length; x++) {
-      lineBar2[x].classList.remove('animate-musicBar2');
-    }
-    for (let y = 0; y < lineBar3.length; y++) {
-      lineBar3[y].classList.remove('animate-musicBar3');
-    }
-  }
-});
-
 //Transformar btn al darle click
 changeBtn();
 
-//Dar sombraas al elemento al pasar el mouse y quitarlo al retirar el mouse
-for (let i = 0; i < detailsBox.length; i++) {
-  detailsBox[i].addEventListener("mouseenter",function () {
-    toggleShadow(detailsBox[i],'shadowCurrent2');
+//Dar sombras al elemento al pasar el mouse y quitarlo al retirar el mouse
+for (let i = 0; i < cardDisc.length; i++) {
+  cardDisc[i].addEventListener("mouseenter",function () {
+    cardDescription[i].style.transform = 'translateY(0%)';
+    gameCover[i].style.transform = 'translateY(0%)';
   });
-  detailsBox[i].addEventListener("mouseleave",function () {
-    toggleShadow(detailsBox[i],'shadowCurrent2');
+  cardDisc[i].addEventListener("mouseleave",function () {
+    cardDescription[i].style.transform = 'translateY(-100%)';
+    gameCover[i].style.transform = 'translateY(-100%)';
   });
 }
+//
