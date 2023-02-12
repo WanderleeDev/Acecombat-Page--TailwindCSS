@@ -6,8 +6,6 @@ const tagHtml = document.querySelector('html');
 //btn mobile
 const btnMobile = document.getElementById('btnMobile');
 const menuMobile = document.getElementById('mobile');
-//label form
-const inputContainer =  document.querySelectorAll('.inputContainer');
 //card disc
 const btnCardDisc = document.querySelectorAll('.btnCardDisc');
 const cardDisc = document.querySelectorAll('.cardDisc');
@@ -23,16 +21,12 @@ const ladoB = document.querySelectorAll('.cardSideB');
 const photo = document.querySelectorAll('.photoStyle');
 const figcaptionPhoto = document.querySelectorAll('.figcaptionStyle');
 const rotateValue = [1, 2, 3, 5, 6, 10, 12, 15, 25, 30];
-//music 
-const playMusic = document.getElementById('playMusic');
-const myAudio = document.getElementById('myAudio');
-const lineBar1 = document.querySelectorAll('.bar1') ;
-const lineBar2 = document.querySelectorAll('.bar2') ;
-const lineBar3 = document.querySelectorAll('.bar3') ;
-let musicOn = false;
+
 //btn details
 const detailsBox = document.querySelectorAll('.detailsStyle');
 const btnDetails = document.querySelectorAll('.btnDetails');
+const imageDetails = document.querySelectorAll('.boxHidden');
+const box = document.querySelectorAll('#box');
 
 // función agregar dark mode
 darkContainer.addEventListener("click",function(){
@@ -43,14 +37,6 @@ darkContainer.addEventListener("click",function(){
   tagHtml.classList.toggle("dark");
 });
 
-//función para animar el label de los formularios
-inputContainer.forEach(function(contenedor) {
-  const labelStyleBasic = contenedor.querySelector('.labelStyleBasic');
-  contenedor.addEventListener("click",function(){
-    labelStyleBasic.classList.toggle("");
-    labelStyleBasic.classList.toggle("text-white");
-  });
-});
 
 //funcion para mostrar la barra mobile
 btnMobile.addEventListener("click", function () {
@@ -118,8 +104,24 @@ for (let i = 0; i < photo.length; i++) {
   });
 }
 
+for (let i = 0; i < btnDetails.length; i++) {
+  btnDetails[i].addEventListener("click", function () {
+    imageDetails[i].style.display = "block";
+  });
+}
+
 //Transformar btn al darle click
 changeBtn();
+
+for (let i = 0; i < detailsBox.length; i++) {
+  detailsBox[i].addEventListener("mouseenter", function () {
+    detailsBox[i].classList.add("shadowCurrent2");
+  });
+  detailsBox[i].addEventListener("mouseleave", function () {
+    detailsBox[i].classList.remove("shadowCurrent2");
+  });
+}
+
 
 //Dar sombras al elemento al pasar el mouse y quitarlo al retirar el mouse
 for (let i = 0; i < cardDisc.length; i++) {
@@ -132,4 +134,3 @@ for (let i = 0; i < cardDisc.length; i++) {
     gameCover[i].style.transform = 'translateY(-100%)';
   });
 }
-//
