@@ -21,7 +21,7 @@ img {
   @apply text-4xl font-bold tracking-wider hidden dark:text-white
 }
 .titleStyle2{
-  @apply text-gray-500 text-2xl mx-4 sm:text-4xl dark:text-sky-500 relative before:absolute before:h-1 before:w-9 before:bg-red-500 before:-top-2
+  @apply text-gray-500 text-2xl mx-4 sm:text-4xl dark:text-amber-500 relative before:absolute before:h-1 before:w-9 before:bg-red-500 before:-top-2
 }
 .titleStyle3{
   @apply text-slate-500 sm:text-xl border-cyan-400 p-2 dark:text-slate-200 lg:text-center
@@ -145,7 +145,7 @@ img {
   @apply w-80 h-52 border-4 border-slate-200 object-cover
 }
 .sumaryStyle{
-  @apply font-Orbitron text-lg cursor-pointer tracking-widest hover:marker:text-black
+  @apply font-Orbitron text-lg cursor-pointer tracking-widest hover:marker:text-black dark:hover:marker:text-white
 }
 .detailsStyle{
   @apply p-4 hover:scale-95 duration-200 w-3/4 sm:p-8

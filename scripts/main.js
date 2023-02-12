@@ -30,6 +30,7 @@ const detailsBox = document.querySelectorAll('.detailsStyle');
 const btnDetails = document.querySelectorAll('.btnDetails');
 const imageDetails = document.querySelectorAll('.boxHidden');
 const box = document.querySelectorAll('#box');
+const AddBeforeAnimated = document.querySelectorAll('.sumaryStyle');
 
 // función agregar dark mode
 for (let i = 0; i < darkContainer.length; i++) {
@@ -122,6 +123,7 @@ for (let i = 0; i < btnDetails.length; i++) {
 //Transformar btn al darle click
 changeBtn();
 
+//Dar sombras al elemento al pasar el mouse y quitarlo al retirar el mouse
 for (let i = 0; i < detailsBox.length; i++) {
   detailsBox[i].addEventListener("mouseenter", function () {
     detailsBox[i].classList.add("shadowCurrent2");
@@ -131,7 +133,6 @@ for (let i = 0; i < detailsBox.length; i++) {
   });
 }
 
-//Dar sombras al elemento al pasar el mouse y quitarlo al retirar el mouse
 for (let i = 0; i < cardDisc.length; i++) {
   cardDisc[i].addEventListener("mouseenter",function () {
     cardDescription[i].style.transform = 'translateY(0%)';

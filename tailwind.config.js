@@ -138,14 +138,6 @@ module.exports = {
           '60%':{borderLeftWidth: '44vw' },
           '100%':{borderLeftWidth: '44vw', borderColor: 'transparent', fontSize: '1.5rem'},
         },
-        musicBar:{
-          '0%':{height: '0.25rem'},
-          '20%':{height: '1rem'},
-          '40%':{height: '1.5rem' },
-          '60%':{height: '0.25rem'},
-          '80%':{height: '1.2rem'},
-          '100%':{height: '0.25rem'},
-        },
         shadowMove:{
           '0%': {textShadow:'1px -1px 0 #c2c2c2;'},
           '25%': {textShadow:'-1px -1px 0 #242424;'},
