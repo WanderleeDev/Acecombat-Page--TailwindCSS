@@ -36,21 +36,19 @@
             <li>
               <ul class="flexContainerRow gap-4 bg-slate-100 shadowMix rounded-3xl dark:bg-slate-400">
                 <li>
-                  <a href="#">
+                  <a href="#search">
                     <svg class="navbarIcon text-red-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="10" cy="10" r="7" />  <line x1="21" y1="21" x2="15" y2="15" />
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="userBtn">
                     <svg class="navbarIcon text-red-500"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                     </svg>  
-                  </a>
                 </li>
                 <!-- btn dark mode -->
-                <li id="darkButtonContainer" class= "containerBtnDark shadowCurrent text-amber-300">
-                  <button id="btnDarkMode" class="darkModeBtn">
+                <li class= "containerBtnDark shadowCurrent text-amber-300">
+                  <button class="darkModeBtn">
                     <svg class="h-8 w-full text-yellow-400 dark:text-amber-400"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="4" />  <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7" />
                     </svg>
                     <svg class="h-8 w-full text-yellow-400 rotate-90"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -101,7 +99,7 @@
                 <span>Info</span>
               </a>
             </li>
-            <li class="beforeUnderline mx-4">
+            <li class="userBtn beforeUnderline mx-4">
               <a class="inline-flex gap-4 items-center"  aria-label="Ir a inicio de sesión" href="#">
                 <svg class="navbarIcon text-red-500/70"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
@@ -109,9 +107,39 @@
                 <span>User</span>       
               </a>
             </li>
+            <li class= "containerBtnDark shadowCurrent text-amber-300 sm:mx-auto">
+              <button class="darkModeBtn">
+                <svg class="h-8 w-full text-yellow-400 dark:text-amber-400"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="4" />  <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7" />
+                </svg>
+                <svg class="h-8 w-full text-yellow-400 rotate-90"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                </svg>
+              </button>
+            </li>
           </ul>
         </li>
       </ul>
+      <!-- Ventana de ingreso -->
+      <div id="loginWindow" class="hidden fixed bg-slate-100 border-slate-400 border-1 z-10 p-2 sm:p-10 left-2/4 -translate-x-2/4 top-28 w-11/12 sm:w-3/4 max-w-max shadowMix md:left-3/4">
+        <svg class="h-10 w-10 text-slate-400 mx-auto"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>        
+        <div>
+          <p class="text-center mb-4">Ingresa con tu red favorita</p>
+          <div class="flexContainerRow gap-4 items-center cursor-pointer hover:bg-white rounded-lg">
+            <img class="w-5 sm:w-10" loading="lazy" src="https://www.dropbox.com/s/c58ix764axpeu19/google.png?raw=1" alt="logo google">
+            <p class="text-xs sm:font-semibold">Usar cuenta de Gmail</p>
+          </div>
+          <div class="flexContainerRow gap-4 items-center cursor-pointer hover:bg-white rounded-lg">
+            <img class="w-5 sm:w-10" loading="lazy" src="https://www.dropbox.com/s/cwkeq6cvwcrrdmr/facebook.png?raw=1" alt="logo facebook">
+            <p class="text-xs sm:font-semibold">Usar cuenta de facebook</p>
+          </div>
+          <div class="flexContainerRow gap-4 items-center cursor-pointer hover:bg-white rounded-lg">
+            <img class="w-5 sm:w-10" loading="lazy" src="https://www.dropbox.com/s/2v4osqi9ee5jqeu/pngegg.png?raw=1" alt="logo acecombat">
+            <p class="text-xs sm:font-semibold">Usar tu ID de usuario</p>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
@@ -152,7 +180,7 @@
             <figcaption class="cardDescription"> Disc N° 1</figcaption>
           </figure>
           <!-- lado B -->
-          <figure class="cardDiscSideB translate-x-full">
+          <figure class="cardDiscSideB">
             <img loading="lazy" src="https://www.dropbox.com/s/f13fg5whv5fr36z/portada2.jpg?raw=1" alt="portada 1 de acecomabat">
             <figcaption class="gameCover">Portada N°1</figcaption>
           </figure>
@@ -168,7 +196,7 @@
             <figcaption class="cardDescription">Disc N°2</figcaption>
           </figure>
           <!-- lado  B -->
-          <figure class="cardDiscSideB translate-x-full">
+          <figure class="cardDiscSideB">
             <img loading="lazy" src="https://www.dropbox.com/s/uqzrvwq7lqoa5w6/portada3.png?raw=1" alt="portada 1 de acecomabat">
             <figcaption class="gameCover">Portada N°2</figcaption>
           </figure>
@@ -184,7 +212,7 @@
             <figcaption class="cardDescription">Disc N°3</figcaption>
           </figure>
           <!-- lado  B -->
-          <figure class="cardDiscSideB translate-x-full">
+          <figure class="cardDiscSideB">
             <img loading="lazy" src="https://www.dropbox.com/s/sksbnbhpb18lyum/portada.png?raw=1" alt="portada 1 de acecomabat">
             <figcaption class="gameCover">Portada N°3</figcaption>
           </figure>
@@ -343,33 +371,70 @@
           </article>
         </div>
       </section>    
-      <article class=" relative lg:col-span-4 md:col-span-3 my-40 overflow-hidden  dark:bg-zinc-700">
+      <article class=" relative lg:col-span-4 md:col-span-3  my-14 overflow-hidden  dark:bg-zinc-700">
         <header>
-          <h3 class="titleStyle3">Aircraft</h3>
+          <h3 class="titleStyle3">Antecesores y predecesores</h3>
         </header>
         <div class="flexContainerRow w-full gap-16 justify-center items-center lg:w-5/12 lg:flex-col lg:mx-auto xl:w-8/12">
-          <details class="detailsStyle bg-red-50 text-red-400 border-2 border-red-400 self-start ">
-            <summary class="sumaryStyle" >Detalles</summary>
-            <p class="bg-red-300 text-white font-bold tracking-widest my-4 p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, atque sunt! Nemo error provident aliquam.
+          <details class="relative detailsStyle bg-red-50 text-red-400 border-2 border-red-400 self-start dark:bg-red-900/10 ">
+            <summary class="sumaryStyle" >Air Combat</summary>
+            <div class="inline-flex flex-wrap gap-2 my-2">
+              <span class="text-white bg-slate-600 rounded-lg p-1 dark:bg-slate-300 dark:text-black">Namco</span>
+              <span class="text-white bg-slate-600 rounded-lg p-1 dark:bg-slate-300 dark:text-black">PlayStation</span>
+              <span class="text-white bg-slate-600 rounded-lg p-1 dark:bg-slate-300 dark:text-black">CD-Rom</span>
+            </div>
+            <p class="bg-red-300 text-white font-bold tracking-widest my-4 p-4 dark:bg-red-500/20">Air Combat es también un videojuego recreativo de Namco de 1992 que simula un F-16.
             </p>
+            <figure class="boxHidden hidden">
+              <img loading="lazy" src="https://www.dropbox.com/s/v4tp9mojx2res0l/air-combat.gif?raw=1" alt="air-combat">
+              <figcaption class="font-bold">30 de junio de 1995</figcaption>
+            </figure>
             <button class="btnDetails btn shadowMix ">click me</button>
           </details>
-          <details class="detailsStyle bg-yellow-50 text-yellow-400 border-2 border-yellow-400 lg:place-self-end">
-            <summary class="sumaryStyle" >Detalles</summary>
-            <p class="bg-yellow-300 text-black font-bold tracking-widest my-4 p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, atque sunt! Nemo error provident aliquam.
+          <details class="detailsStyle bg-yellow-50 text-yellow-400 border-2 border-yellow-400 lg:place-self-end dark:bg-yellow-900/10">
+            <summary class="sumaryStyle" >
+              Ace Combat 3: Electrosphere</summary>
+            <div class="inline-flex flex-wrap gap-2 my-2">
+              <span class="text-white bg-slate-600 rounded-lg p-1 dark:bg-slate-300 dark:text-black">Namco</span>
+              <span class="text-white bg-slate-600 rounded-lg p-1 dark:bg-slate-300 dark:text-black">PlayStation</span>
+              <span class="text-white bg-slate-600 rounded-lg p-1 dark:bg-slate-300 dark:text-black">CD-Rom</span>
+            </div>
+            <p class="bg-yellow-300 text-black font-bold tracking-widest my-4 p-4 dark:bg-yellow-500/20 dark:text-white"> Electrosphere presenta una estética más futurista en comparación con el tema moderno de sus predecesores. Los jugadores controlan uno de varios tipos diferentes de aviones.
             </p>
+            <figure class="boxHidden hidden">
+              <img loading="lazy" src="https://www.dropbox.com/s/w4xtz5hxsly4bpa/BIDee9.gif?raw=1" alt="AceCombat 3">
+              <figcaption class="font-bold">27 de mayo de 1999</figcaption>
+            </figure>
             <button class="btnDetails block mx-auto btn shadowMix bg-white my-4">click me</button>
           </details>
-          <details class="detailsStyle bg-blue-50 text-blue-400 border-2 border-blue-400 self-start">
-            <summary class="sumaryStyle" >Detalles</summary>
-            <p class="bg-blue-300 text-white font-bold tracking-widest my-4 p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, atque sunt! Nemo error provident aliquam.
+          <details class="detailsStyle bg-blue-50 text-blue-400 border-2 border-blue-400 self-start dark:bg-blue-900/10">
+            <summary class="sumaryStyle" >AceCombat 4 Shattered Skies</summary>
+            <div class="inline-flex flex-wrap gap-2 my-2">
+              <span class="text-white bg-slate-600 rounded-lg p-1 dark:bg-slate-300 dark:text-black">Namco</span>
+              <span class="text-white bg-slate-600 rounded-lg p-1 dark:bg-slate-300 dark:text-black">PlayStation 2</span>
+              <span class="text-white bg-slate-600 rounded-lg p-1 dark:bg-slate-300 dark:text-black">CD-Rom</span>
+            </div>
+            <p class="bg-blue-300 text-white font-bold tracking-widest my-4 p-4 dark:bg-blue-500/20">El jugador tiene la oportunidad de comprar 21 aviones diferentes, incluidos modelos de producción y prototipos del mundo real, así como aviones ficticios.
             </p>
+            <figure class="boxHidden hidden">
+              <img loading="lazy" src="https://www.dropbox.com/s/4eepm6qwbksqwj1/giphy-33.gif?raw=1" alt="AceCombat 4">
+              <figcaption class="font-bold">13 de septiembre de 2001</figcaption>
+            </figure>
             <button class="btnDetails block mx-auto btn shadowMix bg-white my-4">click me</button>
           </details>
-          <details class="detailsStyle bg-green-50 text-green-400 border-2 border-green-400 lg:place-self-end">
-            <summary class="sumaryStyle" >Detalles</summary>
-            <p class="bg-green-300 text-black font-bold tracking-widest my-4 p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, atque sunt! Nemo error provident aliquam.
+          <details class="detailsStyle bg-green-50 text-green-400 border-2 border-green-400 lg:place-self-end dark:bg-green-900/10">
+            <summary class="sumaryStyle" >Acecombat 5 The Unsung War</summary>
+            <div class="inline-flex flex-wrap gap-2 my-2">
+              <span class="text-white bg-slate-600 rounded-lg p-1 dark:bg-slate-300 dark:text-black">Namco</span>
+              <span class="text-white bg-slate-600 rounded-lg p-1 dark:bg-slate-300 dark:text-black">PlayStation 2/4</span>
+              <span class="text-white bg-slate-600 rounded-lg p-1 dark:bg-slate-300 dark:text-black">CD-Rom</span>
+            </div>
+            <p class="bg-green-300 text-black font-bold tracking-widest my-4 p-4 dark:bg-green-500/20 dark:text-white">Es la quinta entrega de la saga Ace Combat y narra los hechos posteriores al Ace Combat Zero, de la guerra ficticia Circum-Pacífica. El videojuego fue lanzado al mercado entre 2004 y 2005, dependiendo en cada país.
             </p>
+            <figure class="boxHidden hidden">
+              <img loading="lazy" src="https://www.dropbox.com/s/wp4eshu45dwm2d6/SophisticatedPositiveCowrie-max-1mb.gif?raw=1" alt="AceCombat 5">
+              <figcaption class="font-bold">21 de octubre de 2004</figcaption>
+            </figure>
             <button class="btnDetails block mx-auto btn shadowMix bg-white my-4">click me</button>
           </details>
         </div>
@@ -378,7 +443,7 @@
     <!-- Screen game -->
     <section class="overflow-hidden bg-yellow-700/70 py-8 flexContainerRow justify-around items-center gap-8 md:gap-13 lg:gap-24 dark:bg-zinc-700">
       <header class="w-full">
-        <h3 class="titleStyle3">Game capture</h3>
+        <h3 class="titleStyle3 text-white">Game capture</h3>
       </header>
       <!-- Photo N°1 -->
       <figure class="relative z-3">
@@ -436,7 +501,7 @@
         </figcaption>
       </figure>
       <!-- Photo N°6 -->
-      <figure class="relative z-3">
+      <figure class="relative z-3 rotate-12">
         <div class="photoStyle beforePhoto afterPhoto md:w-52 lg:w-64">
           <div class="overflow-hidden rounded-lg">
               <img class="hover:sepia duration-300 hover:scale-125" src="https://www.dropbox.com/s/cvr9w0enanv6xx0/screen6.jpg?raw=1" alt="screen game">
@@ -459,7 +524,7 @@
           <img class="borderRadiusDotted mx-auto my-4" src="https://www.dropbox.com/s/8wbz6m7ewhgn9ak/meme_gato-mini.png?raw=1" alt="gato">
           Wanderlee Max
         </li>
-        <li>
+        <li class="text-center">
           Entuasiasta del dearrollo web y la programción me la paso bien aprendiendo y practicando.
         </li>
         <li>
@@ -540,5 +605,6 @@
       <p class="text-center p-4"> <time datetime="2023">2023</time> &copy; Prácticando tailwindCSS</p>
     </div>
   </footer>
-  <script src="/scripts/main.js" type="text/javascript"></script>
+  <script src="/src/js/main.js" type="text/javascript"></script>
 </body>
+</html>

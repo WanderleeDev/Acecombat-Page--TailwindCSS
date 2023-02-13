@@ -143,3 +143,23 @@ for (let i = 0; i < cardDisc.length; i++) {
     gameCover[i].style.transform = 'translateY(-100%)';
   });
 }
+
+//Dar una rotación aletoria a las fotos de la sección Game capture
+for (let i = 0; i < photo.length; i++) {
+  let rotate = Math.round(Math.random()*30);
+  while(!rotateValue.includes(rotate)) {
+    rotate = Math.round(Math.random()*30);
+  }
+  console.log(rotate);
+  photo[i].style.transform = 'rotate('+ rotate + 'deg)';
+}
+
+//Dar un skew-X aleatoria a las mini cards q estas detrás de las fotos
+for (let i = 0; i < photo.length; i++) {
+  let skewX = Math.round(Math.random()*30);
+  while (skewX !== 1 && skewX !== 2 && skewX !== 3 && skewX !== 6 && skewX !== 12 && skewX !== 20 && skewX !== 30) {
+    skewX = Math.round(Math.random()*30);
+  }
+  console.log( "Skew" + skewX)
+  figcaptionPhoto[i].style.transform = 'skewX(' + skewX +'deg)';
+}

@@ -3,6 +3,7 @@ const plugin = require('tailwindcss/plugin')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
+  // content antes nombrado como purge Css
   content: ["./public/*.{html,js}","./src/js/main.js",".*.html"],
   theme: {
     extend: {
