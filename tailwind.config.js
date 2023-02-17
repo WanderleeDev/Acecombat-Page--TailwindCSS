@@ -7,7 +7,7 @@ module.exports = {
   content: ["./public/*.{html,js}","./src/js/main.js",".*.html"],
   theme: {
     extend: {
-      //aqui se extienden o agregaran las propiedades, se especifica la propiedad en este caso font = fontfamily, luego ponemos un nombre y su valor.
+      //aquí se extienden o agregaran las propiedades, se especifica la propiedad en este caso font = fontfamily, luego ponemos un nombre y su valor.
       fontFamily:{
         'Orbitron': '"Orbitron", ui-sans-serif, system-ui, sans-serif'
       },
@@ -24,7 +24,7 @@ module.exports = {
         'center': 'center',
         'top': 'top',
         'bottom': 'bottom',
-        'right': 'rigth',
+        'right': 'right',
         'left': 'left',
       },
 
@@ -150,7 +150,7 @@ module.exports = {
 
       },
 
-      //usando las aniamciones creadas las agregamos a animation
+      //usando las animaciones creadas las agregamos a animation
       animation:{
         upDown:'upDown 5s linear infinite 2s',
         fly: 'fly 3s linear forwards',
@@ -166,10 +166,10 @@ module.exports = {
     },
   },
 
-  //En plugin crearemos conjuntos de estilos al igual que @apply aqui se puede ser mas complejo ya que permite usar todas las propiedades css
+  //En plugin crearemos conjuntos de estilos al igual que @apply aquí se puede ser mas complejo ya que permite usar todas las propiedades css
   plugins: [
     plugin(function({addComponents}){
-      //addComponents es un objeto que tendra las propidades de un elemento o bloque, puedes separalos por varios objetos para tenerlo más organizado
+      //addComponents es un objeto que tendrá las propiedades de un elemento o bloque, puedes separarlos por varios objetos para tenerlo más organizado
 
       //objeto para botones:
       addComponents({
@@ -189,7 +189,7 @@ module.exports = {
         },
       });
 
-      //objeto con estilos para  titulos
+      //objeto con estilos para  títulos
       addComponents({
         '.titleBase':{
           fontSize: '3rem',
@@ -209,4 +209,4 @@ module.exports = {
   ],
 }
 //PD: no es buena práctica hacer componentes de esta forma para eso tenemos la directiva @tailwind components, aún asi es bueno tenerlo presente.
-//Se usa Plugins en general para extender las utilidades importando librerias.
+//Se usa Plugins en general para extender las utilidades importando librerías.
