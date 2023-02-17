@@ -1,7 +1,7 @@
 # AceCombat Page 
 Página creada con el fin de poner en práctica los conocimientos en sobre el framework Tailwind.
 
- ![Portada de pagina](https://www.dropbox.com/s/e5rnlg3cixx0r4z/Acecombat2.png?raw=1)
+ ![Portada de pagina](https://www.dropbox.com/s/oje78y7zy3l3mrl/AceCombat%202.gif?raw=1)
 
 1. [Tailwind](#tailwind)
     * [@tailwind base](#tailwind-base)
@@ -9,6 +9,8 @@ Página creada con el fin de poner en práctica los conocimientos en sobre el fr
     * [@tailwind utilities](#tailwind-utilities)
 2. [Tailwind.config.js](#tailwindconfigjs)
 3. [Conclusiones](#conclusiones)
+
+[Primera página hecha con tailwind](https://page-tailwind.vercel.app/)
 
 ---
 ## Antes de empezar 
